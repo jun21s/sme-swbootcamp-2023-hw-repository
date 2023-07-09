@@ -9,29 +9,45 @@
 		<link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/AnYeHyeon/img/main/favicon.ico">  
 		<title>Naver</title>
 		<style>
+			html, body {
+				margin: 0;
+				padding: 0;
+			}
 			#wrap {
 				text-align: center;
 			}
 			#wrap-center {
 				width: 1280px;
+				display: inline-block;
 				background-color: aquamarine;
 			}
-			main {
-				height: 500px;
+			#hamburger {
+				margin-top: 18px;
+				background-color: yellowgreen;
+				width: 30px;
+				height: 30px;
+			}
+			#main {
+				height: 2000px;
 			}
 		</style>
-
 	</head>
 
 	<body>
-		<div di="wrap"></div>
-			<div id="wrap-center"></div>
-			<div id="header"></div>
-			<div id="nav"></div>
-			<div id="main"></div>
+		<div di="wrap">
+			<div id="wrap-center">
+				<div id="header"></div>
+					<div id="hamburger">
+
+					</div>
+				<div id="search"></div>
+				<div id="nav"></div>
+				<div id="main"></div>
+			</div>
+		</div>
 		<header>
 			<!-- TODO: 어디까지를 header로 보는 것이 좋을까요? -->
-			<div></div>
+			<div>안녕</div>
 		</header>
 
 		<section class="main">
