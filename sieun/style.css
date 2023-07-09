@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@font-face { font-family: 'NanumGothic';
+  src: url('/fonts/NanumGothic.eot');
+  src: url('/fonts/NanumGothic.eot') format('embedded-opentype'),url('/fonts/NanumGothic.woff') format('woff');}
+
+
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: NanumGothic, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: linear-gradient(white);
+}
+
+.search {
+  position: relative;
+  display:flex;
+  border: 2px solid #1aed79;
+  border-radius: 3px;
+  justify-content:space-between; 
+  height: 60px;
+  align-items: center;
+  color: lightgray; 
+  margin: 50px 460px 0px 460px;
+}
+
+#search-input{
+  margin-left: 20px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+}
+
+#search-input::placeholder {
+  color: lightgray;
+}
+
+.menutablerow1 td, .menutablerow2 td{
+  text-align: center;
+  vertical-align: top;
+  font-size: 13px;
+  width: 25%;
+  /* padding: 40px; */
+  color: rgb(153, 153, 153);
+  /* border: 1px solid black; */
+  height: 0px; width: 100px;
+
+}
+
+.menutableImg{
+  height: 40px;
+}
+
+#backgroundicon{
+  color: #1aed79;
+}

@@ -3,11 +3,65 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
 		<title>NAVER</title>
 	</head>
 	<body>
 		<header>
-			<!-- TODO: 어디까지를 header로 보는 것이 좋을까요? -->
+
+		<!--맨 위줄-->
+		<div style="display:flex; justify-content: space-between; margin: 10px">
+				<img src="img/menubar.png" style="height:25px;">
+				<img src="img/qr&naverpay.png" style="height:30px;">
+		</div>
+
+		<!--네이버 글자-->
+		<div style="margin: 80px 0px -30px 0px; text-align: center;">
+			<img src="img/naver.png" style="height: 45px;"/>
+		</div>
+
+		<!--검색어 입력 부분-->
+		<div class="search">
+			<form>
+				<input id="search-input" type="text" placeholder="검색어를 입력해주세요."/>
+			</form>
+			<img src="img/search.png" style="height: 45px; margin-right: 5px;">
+		</div>
+
+		<!--메뉴 나열 -->
+		<div style="display: flex; flex-direction:column; align-items:center;">
+				<table class="menutablerow1" style="margin-top: 25px;">
+					<tr>	
+						<td><img src="img/menu1.png" class="menutableImg"></td>
+						<td><img src="img/menu2.png" class="menutableImg"></td> 
+						<td><img src="img/menu3.png" class="menutableImg"></td>
+						<td><img src="img/menu4.png" class="menutableImg"></td>
+					</tr>
+					<tr>	
+						<td>뉴스판</td>
+						<td>경제지표판</td>
+						<td>연예판</td>
+						<td>트랜드판</td>
+					</tr>
+				</table>
+				<table class="menutablerow2" style="margin-top: 20px;">
+					<tr>	
+						<span class="backgroundicon">
+							<td><img src="img/menu5.png" class="menutableImg"></td> 
+							<td><img src="img/menu6.png" class="menutableImg"></td> 
+							<td><img src="img/menu7.png" class="menutableImg"></td> 
+							<td><img src="img/menu8.png" class="menutableImg"></td>
+						</span>
+					</tr>
+					<tr>	
+						<td>메일</td>
+						<td>카페</td>
+						<td>블로그</td>
+						<td></td>
+					</tr>
+				</table>
+		</div>
+
 		</header>
 
 		<section class="main">
