@@ -1,0 +1,185 @@
+/* 맨 위 아이콘 배치 */
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0px;
+  flex-wrap: nowrap;
+}
+/* 좌우 여백 */
+.main {
+  width: 70%;
+  margin: auto;
+}
+/* 배경색 설정 */
+body {
+  /* 그라데이션 효과 */
+  background: linear-gradient(to bottom, #ffffff, #ecf3f8);
+}
+section > section {
+  background-color: #ffffff;
+}
+
+.pan {
+  background-color: #ffffff;
+}
+/* naver 중앙 logo */
+#logo {
+  width: 40%;
+  margin: auto;
+}
+#logo > img {
+  width: 100%;
+}
+/* 검색창 경계선 */
+#browse {
+  border: solid 2px #03c75a;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: auto;
+}
+#browse > input {
+  border: solid 0px;
+  font-size: 10px;
+}
+#browse > img {
+  width: 20%;
+}
+#browse ::placeholder {
+  font-size: 10px;
+}
+/* 판 메뉴 모음 */
+.MenuWrapper {
+  width: 80px;
+  padding: 10px;
+  background-color: #ecf3f8;
+  border-radius: 20%;
+  margin: 15px;
+}
+#menu {
+  width: 100%;
+}
+
+/*오늘 날씨 및 광고 배너 style  */
+#container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px;
+}
+#todayWeather {
+  display: flex;
+}
+/* 주간 지역 날씨 정보 style*/
+
+#weatherHead {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding-left: 10px;
+}
+/* tbody는 작성해야 되지만 웹 브라우저가 자동작성하기도 한다. */
+.category > tbody > tr > td {
+  background-color: #ecf3f8;
+  padding: 10px;
+}
+tr > #selected {
+  background-color: #7896ca;
+  color: white;
+}
+.weekWeather {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.dayWeather {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.dayWeather > img {
+  width: 50%;
+  align-self: center;
+}
+
+/* 코로나 관련 메뉴 style */
+#ads {
+  display: flex;
+}
+#covid {
+  display: flex;
+}
+
+#covid > #factinfo {
+  width: 50%;
+}
+#covid > #positive {
+  width: 50%;
+}
+
+/* 대한민국 기념일 배너 */
+#anniversary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* webtoon 메뉴 */
+#webtoon {
+  font-size: 25px;
+  padding: 10px;
+}
+
+/* 인기 판 메뉴 */
+#pan_btns {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 5px;
+  padding: 10px;
+}
+#pan_btns > div {
+  background-color: #ecf3f8;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+#popular_pan > .text {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 네이버 앱 광고 */
+#naverApp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+#naverApp > div {
+  display: flex;
+  align-items: center;
+}
+
+/* 네이버앱 업데이트 알림 */
+#notice {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer > div {
+  text-align: center;
+}
