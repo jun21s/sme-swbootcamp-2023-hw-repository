@@ -39,21 +39,26 @@ body {
 }
 
 .menutablerow1 td, .menutablerow2 td{
+  position: relative;
   text-align: center;
   vertical-align: top;
   font-size: 13px;
   width: 25%;
-  /* padding: 40px; */
   color: rgb(153, 153, 153);
-  /* border: 1px solid black; */
   height: 0px; width: 100px;
-
 }
 
 .menutableImg{
   height: 40px;
 }
 
-#backgroundicon{
-  color: #1aed79;
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  background-color: gray;
+  border-radius: 50%;
 }
