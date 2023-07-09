@@ -1,86 +1,145 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-  </head>
-  <img src="menu.png" class="menu" height="30" />
-  <img src="QR.png" class="QR" height="30" />
-  <img src="NPay.png" class="NPay" height="30" />
-  <img src="wallet.png" class="wallet" heignt="40" width="40" />
-  <style>
-    .title {
-      color: #01c75b;
-      font-size: 50px;
-      font-weight: bolder;
-      text-align: center;
-    }
 
-    .search {
-      width: 500px;
-      height: 50px;
-      border-radius: 10px;
-      border: 2px solid #01c75b;
-      display: flex;
-      justify-content: center;
-      margin: auto;
-    }
+    <head>
+        <meta charset="utf-8">
+        <title>NAVER</title>
+    </head>
 
-    .search input {
-      width: 350px;
-      height: 50px;
-      border: none;
-      font-size: 20px;
-      color: #d3d3d3;
-    }
+    <style>
+        body{
+            background: linear-gradient(white, #EBF2F7);
+        }
 
-    .menu {
-      margin-left: 400;
-    }
+        .right-menu{
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
 
-    .QR {
-      margin-left: 500;
-    }
+        .title {
+            width: 200;
+            display: flex;
+            justify-content: center;
+            margin: 10 auto auto auto;
+        }
 
-    .tools_1 {
-      display: flex;
-      justify-content: center;
-      margin: auto;
-    }
+        .search {
+            width: 500;
+            height: 50;
+            border-radius: 10px;
+            border: 2px solid #01c75b;
+            display: flex;
+            justify-content: center;
+            margin: 20 auto auto auto;
+        }
 
-    .tools_2 {
-      display: flex;
-      justify-content: center;
-      margin: auto;
-    }
-  </style>
+        .search input {
+            width: 360;
+            height: 50;
+            border: none;
+            font-size: 15px;
+            color: #d3d3d3;
+        }
 
-  <body>
-    <form action="http://naver.com">
-      <div class="title">
-        <h1 class="title">NAVER</h1>
-      </div>
-    </form>
+        .tools_1 {
+            width: 200;
+            display: flex;
+            justify-content: center;
+            margin: 10 auto auto auto;
+        }
 
-    <div class="search">
-      <form action="https://search.naver.com/search.naver" method="GET">
-        <input name="query" type="text" value="검색어를 입력해주세요" />
-      </form>
-      <button>
-        <img src="search.png" height="45" />
-      </button>
-    </div>
+        .news {
+            margin: auto 50 auto auto;
+        }
 
-    <dig class="tools_1">
-      <img src="news.png" class="news" />
-      <img src="economy.png" class="economy" />
-      <img src="entertainment.png" class="entertainment" />
-      <img src="trend.png" class="trend" /> </dig
-    ><br />
+        .economy {
+            margin: auto 50 auto auto;
+        }
 
-    <dig class="tools_2">
-      <img src="mail.png" />
-      <img src="cafe.png" />
-      <img src="blog.png" />
-      <img src="etc.png" />
-    </dig>
-  </body>
+        .entertainment {
+            margin: auto 50 auto auto;
+        }
+
+        .tools_2 {
+            width: 200;
+            display: flex;
+            justify-content: center;
+            margin: 20 auto auto auto;
+        }
+
+        .mail {
+            margin: auto 50 auto auto;
+        }
+
+        .cafe {
+            margin: auto 50 auto auto;
+        }
+
+        .blog {
+            margin: auto 50 auto auto;
+        }
+
+    </style>
+
+    <body>
+        <div class="menu">
+            <a href="https://m.naver.com/aside/">
+                <img src="menu.png" width="50">
+            </a>
+
+            <div class="right-menu">
+                <img src="QR.png" width="50">
+                <a href="https://new-m.pay.naver.com/pcpay?page=1">
+                    <img src="NPay.png" width="50">
+                </a>
+                    <img src="wallet.png" width="50">
+            </div>
+        </div>
+
+        <div class="title">
+            <a href="https://m.naver.com/">
+                <img src="title.png" class="title">
+            </a>
+        </div>
+
+        <div class="search">
+            <form action="https://search.naver.com/search.naver" method="GET">
+                <input name="query" type="text" value="검색어를 입력해주세요" />
+            </form>
+            <button>
+                <img src="search_tool.png" height="45" />
+            </button>
+        </div>
+
+        <div class="tools_1">
+            <a href="https://m.naver.com/naverapp/?cmd=onMenu&menuCode=NEWS&showConfirm=false">
+                <img src="news.png" class="news" width="50">
+            </a>
+            <a href="https://m.naver.com/naverapp/?cmd=onMenu&menuCode=DATA&showConfirm=false&newMain=Y">
+                <img src="economy.png" class="economy" width="50">
+            </a>
+            <a href="https://m.naver.com/naverapp/?cmd=onMenu&menuCode=ENT&showConfirm=false">
+                <img src="entertainment.png" class="entertainment" width="50">
+            </a>
+            <!-- <a href="https://m.naver.com/aside/">/ -->
+                <img src="trend.png" class="trend" width="50">
+            <!-- </a> -->
+        </div>
+
+        <div class="tools_2">
+            <a href="https://m.mail.naver.com/v2/folders/0/all">
+                <img src="mail.png" class="news" width="50">
+            </a>
+            <a href="https://m.cafe.naver.com/">
+                <img src="cafe.png" class="cafe" width="50">
+            </a>
+            <a href="https://m.blog.naver.com/FeedList.naver">
+                <img src="blog.png" class="blog" width="50">
+            </a>
+            <a href="https://m.naver.com/services.html">
+                <img src="etc.png" class="etc" width="50">
+            </a>
+        </div>
+    </body>
+
 </html>
