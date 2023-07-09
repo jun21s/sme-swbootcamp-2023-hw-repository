@@ -60,144 +60,146 @@
                 </ul>
             </div>
         </section>
-        <section class="weather">
-            <div class="menu1">
-                <div class="today">
-                    <div class="moon"><img src="images/moon.png" alt="moon" width="50px" height="50px"></div>
-                    <div class="today_weather"><h2>10&#176;</h2>어제보다 2&deg;높아요</div>
+        <div id="menus">
+            <section class="weather">
+                <div class="menu1">
+                    <div class="today">
+                        <div class="moon"><img src="images/moon.png" alt="moon" width="50px" height="50px"></div>
+                        <div class="today_weather"><h2>10&#176;</h2>어제보다 2&deg;높아요</div>
+                    </div>
+                    <div class="other">|<a href="https://now.naver.com/"><img src="images/other.png" alt="other"></a></div>
                 </div>
-                <div class="other">|<a href="https://now.naver.com/"><img src="images/other.png" alt="other"></a></div>
+                <div class="menu2">
+                    <div class="menu2_top">
+                        <span style="display: inline; font-weight:bolder;">날씨</span>
+                        <span>서울시 잠실동 <img src="images/gps.png" alt="gps"></span>
+                        <span></span>
+                    </div>
+                    <div class="buttons">
+                        <button>시간대별 날씨</button>
+                        <button>시간대별 미세먼지</button>
+                        <button>주간날씨</button>
+                        <button>주간 미세먼지</button>
+                    </div>
+                    <div class="week">
+                        <div class="row">
+                            <span>19&deg;</span>
+                            <span>|</span>
+                            <span>8&deg;</span>
+                            <span><img src="images/sun.png" alt="sun" width="25px" height="25px"></span>
+                            <span class="day">어제</span>
+                        </div>
+                        <div class="row">
+                            <span>22&deg;</span>
+                            <span>|</span>
+                            <span>7&deg;</span>
+                            <span><img src="images/sun.png" alt="sun" width="25px" height="25px"></span>
+                            <span id="today">오늘</span>
+                        </div>
+                        <div class="row">
+                            <span>17&deg;</span>
+                            <span>|</span>
+                            <span>11&deg;</span>
+                            <span><img src="images/rain.png" alt="rain" width="25px" height="25px"></span>
+                            <span class="day">월</span>
+                        </div>
+                        <div class="row">
+                            <span>18&deg;</span>
+                            <span>|</span>
+                            <span>12&deg;</span>
+                            <span><img src="images/rain.png" alt="rain" width="25px" height="25px"></span>
+                            <span class="day">화</span>
+                        </div>
+                        <div class="row">
+                            <span>17&deg;</span>
+                            <span>|</span>
+                            <span>4&deg;</span>
+                            <span><img src="images/sun.png" alt="sun" width="25px" height="25px"></span>
+                            <span class="day">수</span>
+                        </div>
+                        <div class="row">
+                            <span>19&deg;</span>
+                            <span>|</span>
+                            <span>4&deg;</span>
+                            <span><img src="images/sun.png" alt="sun" width="25px" height="25px"></span>
+                            <span class="day">목</span>
+                        </div>
+                        <div class="row">
+                            <span>19&deg;</span>
+                            <span>|</span>
+                            <span>6&deg;</span>
+                            <span><img src="images/sun.png" alt="sun" width="25px" height="25px"></span>
+                            <span class="day">금</span>
+                        </div>
+                        <div class="row">
+                            <span>19&deg;</span>
+                            <span>|</span>
+                            <span>8&deg;</span>
+                            <span><img src="images/sun.png" alt="sun" width="25px" height="25px"></span>
+                            <span class="day">토</span>
+                        </div>
+                        <div class="row">
+                            <span>18&deg;</span>
+                            <span>|</span>
+                            <span>6&deg;</span>
+                            <span><img src="images/sun.png" alt="sun" width="25px" height="25px"></span>
+                            <span class="day">일</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="corona">
+                <div class="corona_status">
+                    <div>
+                        <span><img src="images/fact.png" alt="fact" width="20px"></span>
+                        <span><b>코로나19</b></span>
+                    </div>
+                    <div style="color: grey;">
+                        <a href="https://ncov.kdca.go.kr/bdBoardList_Real.do?brdId=1&brdGubun=11&ncvContSeq=&contSeq=&board_id=&gubun=">국내외 확진 현황</a>
+                    </div>
+                </div>
+                <div class="corona_separator">|</div>
+                <div class="corona_fact">
+                    <div>
+                        <span><img src="images/status.png" alt="status" width="20px"></span>
+                        <span><b>코로나19 팩트체크</b></span>
+                    </div>
+                    <div style="color: grey;">
+                        <a href="https://ncov.kdca.go.kr/factBoardList.do?brdId=3&brdGubun=33">백신 정보 팩트는?</a>
+                    </div>
+                </div>
+            </div>        
+            <div class="anniversary">
+                <span><img src="images/korea.png" alt="korea" width="30px" height="30px"></span>
+                <span style="font-size: 14px; color: grey;">제102주년 <b>대한민국 임시정부 수립일</b></span>
             </div>
-            <div class="menu2">
-                <div class="menu2_top">
-                    <span style="display: inline; font-weight:bolder;">날씨</span>
-                    <span>서울시 잠실동 <img src="images/gps.png" alt="gps"></span>
-                    <span></span>
-                </div>
-                <div class="buttons">
-                    <button>시간대별 날씨</button>
-                    <button>시간대별 미세먼지</button>
-                    <button>주간날씨</button>
-                    <button>주간 미세먼지</button>
-                </div>
-                <div class="week">
-                    <div class="row">
-                        <span>19&deg;</span>
-                        <span>|</span>
-                        <span>8&deg;</span>
-                        <span><img src="images/sun.png" alt="sun" width="25px" height="25px"></span>
-                        <span class="day">어제</span>
-                    </div>
-                    <div class="row">
-                        <span>22&deg;</span>
-                        <span>|</span>
-                        <span>7&deg;</span>
-                        <span><img src="images/sun.png" alt="sun" width="25px" height="25px"></span>
-                        <span id="today">오늘</span>
-                    </div>
-                    <div class="row">
-                        <span>17&deg;</span>
-                        <span>|</span>
-                        <span>11&deg;</span>
-                        <span><img src="images/rain.png" alt="rain" width="25px" height="25px"></span>
-                        <span class="day">월</span>
-                    </div>
-                    <div class="row">
-                        <span>18&deg;</span>
-                        <span>|</span>
-                        <span>12&deg;</span>
-                        <span><img src="images/rain.png" alt="rain" width="25px" height="25px"></span>
-                        <span class="day">화</span>
-                    </div>
-                    <div class="row">
-                        <span>17&deg;</span>
-                        <span>|</span>
-                        <span>4&deg;</span>
-                        <span><img src="images/sun.png" alt="sun" width="25px" height="25px"></span>
-                        <span class="day">수</span>
-                    </div>
-                    <div class="row">
-                        <span>19&deg;</span>
-                        <span>|</span>
-                        <span>4&deg;</span>
-                        <span><img src="images/sun.png" alt="sun" width="25px" height="25px"></span>
-                        <span class="day">목</span>
-                    </div>
-                    <div class="row">
-                        <span>19&deg;</span>
-                        <span>|</span>
-                        <span>6&deg;</span>
-                        <span><img src="images/sun.png" alt="sun" width="25px" height="25px"></span>
-                        <span class="day">금</span>
-                    </div>
-                    <div class="row">
-                        <span>19&deg;</span>
-                        <span>|</span>
-                        <span>8&deg;</span>
-                        <span><img src="images/sun.png" alt="sun" width="25px" height="25px"></span>
-                        <span class="day">토</span>
-                    </div>
-                    <div class="row">
-                        <span>18&deg;</span>
-                        <span>|</span>
-                        <span>6&deg;</span>
-                        <span><img src="images/sun.png" alt="sun" width="25px" height="25px"></span>
-                        <span class="day">일</span>
-                    </div>
-                </div>
+            <div class="app">
+                <span><img src="images/naver.png" alt="naver" width="30px" height="30px" style="margin:5px">앱으로 <b>새로운 네이버</b>를 더 쾌적하게 사용해보세요.</span>
+                <span><button>앱 사용하기</button></span>
             </div>
-        </section>
-        <div class="corona">
-            <div class="corona_status">
+            <div class="webtoon">
+                <span style="font-size:18px; margin-left: 5px; margin-right: auto;">웹툰</span>
+                <img src="images/down.png" alt="down" width="20px" style="margin-right: 5px;">
+            </div>
+            <div class="pan">
                 <div>
-                    <span><img src="images/fact.png" alt="fact" width="20px"></span>
-                    <span><b>코로나19</b></span>
+                    <span style="font-size:14px; font-weight: 600;">인기 주제 판을 확인해보세요!</span>
+                    <span>판관리</span>
                 </div>
-                <div style="color: grey;">
-                    <a href="https://ncov.kdca.go.kr/bdBoardList_Real.do?brdId=1&brdGubun=11&ncvContSeq=&contSeq=&board_id=&gubun=">국내외 확진 현황</a>
-                </div>
-            </div>
-            <div class="corona_separator">|</div>
-            <div class="corona_fact">
                 <div>
-                    <span><img src="images/status.png" alt="status" width="20px"></span>
-                    <span><b>코로나19 팩트체크</b></span>
+                    <ul>
+                        <li><span><img src="images/pan1.png" alt="pan1" width="25px">영화판</span><button>></button></li>
+                        <li><span><img src="images/pan2.png" alt="pan2" width="25px">뿜판</span><button>></button></li>
+                        <li><span><img src="images/pan3.png" alt="pan3" width="25px">웹툰판</span><button>></button></li>
+                        <li><span><img src="images/pan4.png" alt="pan4" width="25px">경제M판</span><button>></button></li>
+                    </ul>
                 </div>
-                <div style="color: grey;">
-                    <a href="https://ncov.kdca.go.kr/factBoardList.do?brdId=3&brdGubun=33">백신 정보 팩트는?</a>
-                </div>
             </div>
-        </div>        
-        <div class="anniversary">
-            <span><img src="images/korea.png" alt="korea" width="30px" height="30px"></span>
-            <span style="font-size: 14px; color: grey;">제102주년 <b>대한민국 임시정부 수립일</b></span>
-        </div>
-        <div class="app">
-            <span><img src="images/naver.png" alt="naver" width="30px" height="30px" style="margin:5px">앱으로 <b>새로운 네이버</b>를 더 쾌적하게 사용해보세요.</span>
-            <span><button>앱 사용하기</button></span>
-        </div>
-        <div class="webtoon">
-            <span style="font-size:18px; margin-left: 5px; margin-right: auto;">웹툰</span>
-            <img src="images/down.png" alt="down" width="20px" style="margin-right: 5px;">
-        </div>
-        <div class="pan">
-            <div>
-                <span style="font-size:14px; font-weight: 600;">인기 주제 판을 확인해보세요!</span>
-                <span>판관리</span>
+            <div class="update">
+                <span class="notify">알립니다</span>
+                <span style="font-size:14px; color:rgb(88, 99, 108); margin-right: auto;">네이버앱 업데이트 사전 안내</span>
+                <button>></button>
             </div>
-            <div>
-                <ul>
-                    <li><span><img src="images/pan1.png" alt="pan1" width="25px">영화판</span><button>></button></li>
-                    <li><span><img src="images/pan2.png" alt="pan2" width="25px">뿜판</span><button>></button></li>
-                    <li><span><img src="images/pan3.png" alt="pan3" width="25px">웹툰판</span><button>></button></li>
-                    <li><span><img src="images/pan4.png" alt="pan4" width="25px">경제M판</span><button>></button></li>
-                </ul>
-            </div>
-        </div>
-        <div class="update">
-            <span class="notify">알립니다</span>
-            <span style="font-size:14px; color:rgb(88, 99, 108); margin-right: auto;">네이버앱 업데이트 사전 안내</span>
-            <button>></button>
         </div>
     </main>
     <footer>
