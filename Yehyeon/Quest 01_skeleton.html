@@ -110,7 +110,7 @@
 			#big-logo {
 				position: absolute;
 				top: 130px;
-				right: 280px;
+				left: 275px;
 				font-size: 50px;
 				font-weight: bold;				
 				color: #03c75a;
@@ -134,6 +134,65 @@
 					border-radius: 5px;
 					border-width: thin;
 			}
+			#microphone {
+				position: absolute;
+				top: 203px;
+    			right: 362px;
+				margin: none;
+				padding: 5px;
+				display: inline-block;
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+			#microphone > div {
+				background-image: url(https://raw.githubusercontent.com/AnYeHyeon/img/main/sp_main.png);
+				width: 33px;
+				height: 33px;
+				background-color: #03c75a;
+				background-size: 324px 265px;
+				background-position: -136px -194px;
+			}
+
+			#imgsearch {
+				position: absolute;
+				top: 203px;
+    			right: 325px;
+				margin: none;
+				padding: 5px;
+				display: inline-block;
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+			#imgsearch > div {
+				background-image: url(https://raw.githubusercontent.com/AnYeHyeon/img/main/sp_main.png);
+				width: 33px;
+				height: 33px;
+				background-color: #03c75a;
+				background-size: 324px 265px;
+				background-position: -136px -194px;
+			}
+
+			#location {
+				position: absolute;
+				top: 203px;
+    			right: 286px;
+				margin: none;
+				padding: 5px;
+				display: inline-block;
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+			#location > div {
+				background-image: url(https://raw.githubusercontent.com/AnYeHyeon/img/main/sp_main.png);
+				width: 33px;
+				height: 33px;
+				background-color: #03c75a;
+				background-size: 324px 265px;
+				background-position: -215px -194px;
+			}
 		</style>
 	</head>
 
@@ -153,13 +212,18 @@
 				<button id="header-naverpay">
 					<div></div>
 				</button>
-				<div id="big-logo">NAVER</div>	
+				<a href="#">
+					<div id="big-logo">NAVER</div>	
+				</a>
 			</div>
 			<div id="search">
 				<form action="">  <!-- enter로 다음페이지로 넘어감 -->
 					<label for="search-input" class="blind">검색어 입력</label>
 					<input type="text" title="검색어를 입력해주세요." placeholder="검색어를 입력해주세요." />
 					<button class="blind">검색</button>
+					<button id="microphone"><div></div></button>
+					<button id="imgsearch"><div></div></button>
+					<button id="location"><div></div></button>
 				</form>
 			</div>
 			<div id="nav"></div>
