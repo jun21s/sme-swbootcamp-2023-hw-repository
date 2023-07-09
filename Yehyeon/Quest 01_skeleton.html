@@ -9,7 +9,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/AnYeHyeon/img/main/favicon.ico">  
 		<title>Naver</title>
 		<style>
-			html, body {
+			html, body, form{
 				margin: 0;
 				padding: 0;
 			}
@@ -17,14 +17,14 @@
 				text-align: center;
 			}
 			#wrap-center {
-				width: 1280px;
+				width: 700px;
 				display: inline-block;
 				background-color: aquamarine;
 			}
 			#header {
 				text-align: left;
 				position: relative;
-				height: 65px;
+				height: 200px;
 			}
 			#header-hamburger {
 				position: absolute;
@@ -107,54 +107,65 @@
 				margin: -1px;
 				overflow: hidden;
 			}
+			#big-logo {
+				position: absolute;
+				top: 130px;
+				right: 280px;
+				font-size: 50px;
+				font-weight: bold;				
+				color: #03c75a;
+
+			}
+
 			#search > form {
-					width: 708px;
-					height: 60px;
-				}
+					margin: 0 auto;
+					text-align: center;
+					width: 488px;
+					height: 52px;
+					border: 1px solid #03c75a;
+					border-radius: 5px;
+			}
+			#search > form > input {
+					text-align: left;
+					padding: 0;
+					width: 480px;
+					height: 98%;
+					border: none;
+					border-radius: 5px;
+					border-width: thin;
+			}
 		</style>
 	</head>
 
-	<body>
-		<div di="wrap">
-			<div id="wrap-center">
-				<div id="header">
-					<button id="header-hamburger">
-						<div></div>
-					</button>
-					<button id="header-qrcheckin">
-						<div></div>
-					</button>
-					<button id="header-navertalk">
-						<div></div>
-					</button>
-					<button id="header-naverpay">
-						<div></div>
-					</button>
-					
-				</div>
-				<div id="search">
-					<form action="">  <!-- enter로 다음페이지로 넘어감 -->
-						<label for="search-input" class="blind">검색</label>
-						<input type="text" title="검색어를 입력해주세요." placeholder="검색어를 입력해주세요.">
-						<button class="blind">검색</button>
-					</form>
-				</div>
-				<div id="nav"></div>
-				<div id="main"></div>
-					
+<body>
+	<div di="wrap">
+		<div id="wrap-center">
+			<div id="header">
+				<button id="header-hamburger">
+					<div></div>
+				</button>
+				<button id="header-qrcheckin">
+					<div></div>
+				</button>
+				<button id="header-navertalk">
+					<div></div>
+				</button>
+				<button id="header-naverpay">
+					<div></div>
+				</button>
+				<div id="big-logo">NAVER</div>	
 			</div>
+			<div id="search">
+				<form action="">  <!-- enter로 다음페이지로 넘어감 -->
+					<label for="search-input" class="blind">검색어 입력</label>
+					<input type="text" title="검색어를 입력해주세요." placeholder="검색어를 입력해주세요." />
+					<button class="blind">검색</button>
+				</form>
+			</div>
+			<div id="nav"></div>
+			<div id="main"></div>
+				
 		</div>
-		<header>
-			<!-- TODO: 어디까지를 header로 보는 것이 좋을까요? -->
-			<div></div>
-		</header>
-
-		<section class="main">
-			<!-- TODO: main은 어떤 식으로 나눌 수 있을까요? -->
-		</section>
-
-		<footer>
-			<!-- TODO: 하단의 여러 가지 링크들은 어떻게 처리하면 좋을까요? -->
-		</footer>
-	</body>
+	</div>
+</body>
 </html>
