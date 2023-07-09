@@ -16,24 +16,29 @@ body{
     background-color: white;
 } */
 
+
 .menu{
     position: relative;
 }
 
+/* 오른쪽으로 옮기기 */
 .header_right{
     position: absolute;
     right: 0;
 }
 
+/* 전체 가운데 정렬 */
 main, footer{
     text-align: center;
 }
 
+/* 테이블 가운데 정렬 */
 table{
     margin-left: auto;
     margin-right: auto;
 }
 
+/* 검색창 부분 모양 만들기 */
 .search_bar{
     border: 2px solid greenyellow;
     background-color: white;
@@ -45,7 +50,7 @@ table{
     position: absolute;
     right: 0px;
 }
-
+/* 뒤에 배경이랑 자연스럽게 하기 위해서 outline none */
 .search_box{
     width:400px;
     height:40px;
@@ -58,7 +63,7 @@ table{
 .pan{
     width: 500px;
 }
-
+/* inline-block 크기, 색 조절 위해 사용 */
 .weather_up{
     display:inline-block;
     width: 530px;
@@ -66,6 +71,7 @@ table{
     background-color: white;
     
 }
+/* 위치는 전부 가운데 정렬 한 뒤에 좌우 반대로 된거 건드려서 설정 */
 .weather_simple{
     position: relative;
     right: 20%;
@@ -89,6 +95,7 @@ table{
     position: relative;
     right: 40px;
 }
+/* 테두리 둥글게 */
 .index1{
     display:inline-block;
     background-color: rgb(230, 231, 235);
@@ -157,6 +164,7 @@ table{
     width: 530px;
     background-color: white;
 }
+/* 이미지 위 아래 가운데 정렬 하기 위해서 */
 .button{
     vertical-align: middle;
 }
@@ -214,6 +222,7 @@ table{
 /* .block{
     background-color: beige;
 } */
+/* 글 부분 세로 가운데 맞추기 위해서 */
 .pan_word{
     line-height: 30px;
 }
