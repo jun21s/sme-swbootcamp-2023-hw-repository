@@ -22,8 +22,9 @@
 				background-color: aquamarine;
 			}
 			#header-hamburger {
-				margin-top: 18px;
-				padding: 10px;
+				position: absolute;
+				margin: none;
+				padding: 5px;
 				display: inline-block;
 				background: none;
 				border: none;
@@ -34,7 +35,61 @@
 				width: 44px;
 				height: 44px;
 				background-size: 324px 265px;
-    			background-position: -51px -423px;
+    			background-position: -49px -411px;
+			}
+
+			#header-qrcheckin {
+				position: absolute;
+				right: 85px;
+				margin: none;
+				padding: 5px;
+				display: inline-block;
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+			#header-qrcheckin > div {
+				background-image: url(https://raw.githubusercontent.com/AnYeHyeon/img/main/sp_main.png);
+				width: 70px;
+				height: 44px;
+				background-size: 324px 265px;
+    			background-position: -245px -137px;
+			}
+
+			#header-navertalk {
+				position: absolute;
+				right: 45px;
+				margin: none;
+				padding: 5px;
+				display: inline-block;
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+			#header-navertalk > div {
+				background-image: url(https://raw.githubusercontent.com/AnYeHyeon/img/main/sp_main.png);
+				width: 40px;
+				height: 40px;
+				background-size: 324px 265px;
+    			background-position: -90px -191px;
+			}
+
+			#header-naverpay {
+				position: absolute;
+				right: 5px;
+				margin: none;
+				padding: 5px;
+				display: inline-block;
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+			#header-naverpay > div {
+				background-image: url(https://raw.githubusercontent.com/AnYeHyeon/img/main/sp_main.png);
+				width: 44px;
+				height: 44px;
+				background-size: 324px 265px;
+    			background-position: -212px -76px;
 			}
 			#main {
 				height: 2000px;
@@ -45,13 +100,25 @@
 	<body>
 		<div di="wrap">
 			<div id="wrap-center">
-				<div id="header"></div>
+				<div id="header">
 					<button id="header-hamburger">
 						<div></div>
 					</button>
+					<button id="header-qrcheckin">
+						<div></div>
+					</button>
+					<button id="header-navertalk">
+						<div></div>
+					</button>
+					<button id="header-naverpay">
+						<div></div>
+					</button>
+					
+				</div>
 				<div id="search"></div>
 				<div id="nav"></div>
 				<div id="main"></div>
+					
 			</div>
 		</div>
 		<header>
