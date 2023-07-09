@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1,maximum-scale=1" />
+        <title>NAVER</title>
+        <link rel="stylesheet" href="nstyle.css"></link>
+        <style>
+            header {
+                height: 170px;
+            }
+            main {
+                min-height: 460px;
+            }
+            footer {
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .links {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .link_text {
+                font-size: 10px;
+                font-weight: bold;
+                color: black;
+                margin-left: 5px;
+            }
+            .sch-input-wrap {
+                width: 500px;
+                height: 50px;
+                border: 2px solid #03cf5d;
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+                    margin-right: auto;
+            }
+            .sch_input {
+                flex: 9;
+                height: 45px;
+                width: 495px;
+                padding-left: 12px;
+                padding-right: 12px;
+                border: none;
+                outline: none;
+                font-size: 18px;
+            }
+        </style>
+        <header>
+            <div class="links">
+                <a href="/" class="link_text">QR 체크인</a>
+                <a href="/" class="link_text">N Pay</a>
+            </div>
+            <div class="logo">
+                <center><img src="images/logo.png" height="120"></center>
+            </div>
+            <form name="search" role="search" action="https://m.search.naver.com/search.naver">
+                <div class="sch-input-wrap">
+                    <center><input id="query" type="search" name="query" title="검색어를 입력해주세요." placeholder="검색어를 입력해주세요." class="sch_input" autocomplete="off" maxlength="255" autocapitalize="off"></center>
+                </div>
+            </form>
+        </header>
+        <main>
+            <style>
+                table {
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-size: 10px;
+                    color: rgb(157, 157, 157);
+                }
+                th, td {
+                        padding: 25px;
+                    }
+                .main-container {
+                    width: 500px;
+                    margin: auto;
+                    display: grid;
+                    grid-template-columns: 500px;
+                    grid-template-rows: 80px 280px 80px 45px 85px 40px 130px 80px;
+                    gap: 10px;
+                }
+                .temp-box {
+                    background-color: darkseagreen;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 13px;
+                }
+                
+            </style>
+            <table>
+                <tr align="center">
+                    <th><img src="images/n.png" height="50"><br>
+                    <span>뉴스판</span></th>
+                    <th><img src="images/s.png" height="50"><br>
+                    <span>쇼핑판</span></th>
+                    <th><img src="images/e.png" height="50"><br>
+                    <span>경제판</span></th>
+                    <th><img src="images/sp.png" height="50"><br>
+                    <span>스포츠판</span></th>
+                </tr>
+                <tr align="center">
+                    <td><img src="images/m.png" height="50"><br>
+                    <span>메일</span></td>
+                    <td><img src="images/c.png" height="50"><br>
+                    <span>카페</span></td>
+                    <td><img src="images/b.png" height="50"><br>
+                    <span>블로그</span></td>
+                    <td><img src="images/_.png" height="50"><br>
+                    <span>⠀</span></td>
+                </tr>
+            </table>
+            <div class="main-container">
+                <div class="temp-box">10º 맑음<br>
+                어제보다 2º 높아요</div>
+                <div class="temp-box">날씨 &nbsp;&nbsp;서울시 잠실동
+                    <div class="weather-button">
+                        <button>시간대별 날씨</button>
+                        <button>시간대별 미세먼지</button>
+                        <button>주간 날씨</button>
+                        <button>주간 미세먼지</button>
+                    </div>
+                    <table>
+                        <tr align="center">
+                            <th>19º</th>
+                            <th>22º</th>
+                            <th>17º</th>
+                            <th>18º</th>
+                            <th>17º</th>
+                            <th>19º</th>
+                            <th>19º</th>
+                            <th>19º</th>
+                            <th>18º</th>
+                        </tr>
+                        <tr align="center">
+                            <td>|</td>
+                            <td>|</td>
+                            <td>|</td>
+                            <td>|</td>
+                            <td>|</td>
+                            <td>|</td>
+                            <td>|</td>
+                            <td>|</td>
+                            <td>|</td>
+                        </tr>
+                        <tr align="center">
+                            <td>8º</td>
+                            <td>7º</td>
+                            <td>11º</td>
+                            <td>12º</td>
+                            <td>4º</td>
+                            <td>4º</td>
+                            <td>6º</td>
+                            <td>8º</td>
+                            <td>6º</td>
+                        </tr>
+                        <tr align="center">
+                            <td>해</td>
+                            <td>해</td>
+                            <td>비</td>
+                            <td>비</td>
+                            <td>해</td>
+                            <td>해</td>
+                            <td>해</td>
+                            <td>해</td>
+                            <td>해</td>
+                        </tr>
+                        <tr align="center">
+                            <td>어제</td>
+                            <td>오늘</td>
+                            <td>월</td>
+                            <td>화</td>
+                            <td>수</td>
+                            <td>목</td>
+                            <td>금</td>
+                            <td>토</td>
+                            <td>일</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="temp-box">3</div>
+                <div class="temp-box">4</div>
+                <div class="temp-box">5</div>
+                <div class="temp-box">6</div>
+                <div class="temp-box">7</div>
+                <div class="temp-box">8</div>
+            </div>
+        </main>
+        <footer>
+            <style>
+                ul {
+                    list-style: none;
+                }
+                .flinks {
+                    font-size: 12px;
+                    display: inline-block;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: space-between;
+                }
+            </style>
+            <div class="flinks">
+                <a href="/" class="flink-text">로그인</a>
+                <a href="/" class="flink-text">전체서비스</a>
+                <a href="/" class="flink-text">PC버전</a><br>
+                <a href="/" class="flink-text">이용약관</a>
+                <a href="/" class="flink-text">개인정보처리방침</a>
+                <a href="/" class="flink-text">고객센터</a>
+            </div>
+        </footer>
+    </body>
+</html>
