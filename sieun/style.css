@@ -13,7 +13,7 @@
 }
 
 body {
-  background: linear-gradient(white 15%,#e2e6ea);
+  background: linear-gradient(white 15%,#EFF2F8);
 }
 
 .search {
@@ -83,7 +83,7 @@ body {
 }
 
 .useapp {
-  border: 1px solid #4E99DF;
+  border: 1.5px solid #4E99DF;
   width: 80px;
   height: 35px;
   display: flex; 
@@ -92,5 +92,18 @@ body {
   font-size: 13px;
   color:#4E99DF;
   border-radius: 3px;
+  margin: auto 20px;
+}
+
+.notice {
+  border: 1.5px solid #44D672;
+  color:#44D672;
+  width: 60px;
+  height: 20px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  font-size: 13px;
+  border-radius:35%/100%;
   margin: auto 20px;
 }
