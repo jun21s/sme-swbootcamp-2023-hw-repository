@@ -14,10 +14,8 @@
 <body>
   <header>
     <!-- TODO: 어디까지를 header로 보는 것이 좋을까요? -->
-    <button align="left">
-      <img src="image/hamburger.png" />
-    </button>
-    <img align="right" src="image/screen.png" />
+    <img src="image/hamburger.png" />
+    <img id="btns" src="image/screen.png" />
   </header>
 
   <section class="main">
@@ -32,7 +30,7 @@
       <form style="border: none" placeholder="검색어를 입력하세요">
         <fieldset id="browse" width="80%">
           <input id="query" name="query" type="search" placeholder="검색창을 입력해주세요" />
-          <img align="right" src="image/searchIcons.png" alt="검색보조아이콘" />
+          <img  src="image/searchIcons.png" alt="검색보조아이콘" />
         </fieldset>
       </form>
     </section>
@@ -63,7 +61,7 @@
           <td>
             <div class="MenuWrapper">
 
-              <img src="image/entertainment.png" width="58px" height="58px" alt="연예판icon" /><br />
+              <img src="image/entertainment.png"  alt="연예판icon" /><br />
             </div>
 
             연예판<br />
@@ -71,7 +69,7 @@
           <td>
             <div class="MenuWrapper">
 
-              <img src="image/trend.png" width="58px" height="58px" alt="트렌드판icon" /><br />
+              <img src="image/trend.png" alt="트렌드판icon" /><br />
             </div>
 
             브랜드판<br />
@@ -81,7 +79,7 @@
           <td>
             <div class="MenuWrapper">
 
-              <img src="image/mail.png" width="58px" height="58px" alt="카페 아이콘" /><br />
+              <img src="image/mail.png"  alt="카페 아이콘" /><br />
             </div>
 
             메일<br />
@@ -89,7 +87,7 @@
           <td>
             <div class="MenuWrapper">
 
-              <img src="image/cafe.png" width="58px" height="58px" alt="카페 아이콘" /><br />
+              <img src="image/cafe.png"  alt="카페 아이콘" /><br />
             </div>
 
             카페<br />
@@ -97,7 +95,7 @@
           <td>
             <div class="MenuWrapper">
 
-              <img src="image/blog.png" width="58px" height="58px" alt="블로그 아이콘" /><br />
+              <img src="image/blog.png"  alt="블로그 아이콘" /><br />
             </div>
 
             블로그<br />
@@ -105,7 +103,7 @@
           <td>
             <div class="MenuWrapper">
 
-              <img src="image/etc.png" width="58px" height="58px" alt="더보기.img" /><br />
+              <img src="image/etc.png" alt="더보기.img" /><br />
             </div>
 
             더보기...<br />
@@ -234,16 +232,16 @@
       </div>
     </section>
     <br>
-    <div class="pan" id="anniversary" align="center">
+    <div class="pan" id="anniversary" >
       <img src="image/korea.png" /> 제102주년 대한민국 임시정부 수립일
     </div>
     <br>
     <div class="pan" id="naverApp">
       <div>
         <img src="image/navermobile.png" width="58px" height="58px" />
-        &nbsp; 앱으로 <b>새로운 네이버</b>를 더 쾌적하게 사용해 보세요
+        &nbsp; 앱으로  <b> &nbsp;새로운 네이버</b>를 더 쾌적하게 사용해 보세요
       </div>
-      <button>앱 사용하기</button>
+      <div id="usebtn">앱 사용하기</div>
     </div>
 
     <br>
@@ -256,16 +254,32 @@
       </div>
       <div id="pan_btns">
         <div>
-          <img src="image/movie.png" />&nbsp; 영화판
+          <div class="popular_pan">
+            <img src="image/movie.png" /> 
+            영화판
+          </div>
+          <img src="image/arrow.png" />
         </div>
+          
         <div>
+          <div class="popular_pan">
           <img src="image/webtoon.png" />&nbsp;웹툰판
+          </div> 
+          <img src="image/arrow.png" />
+
         </div>
+
         <div>
+          <div class="popular_pan">
           <img src="image/bboom.png" /> &nbsp;뿜판
+          </div>
+           <img src="image/arrow.png" />
         </div>
         <div>
+          <div class="popular_pan">
           <img src="image/economical.png" />&nbsp;경제M판
+          </div>
+          <img src="image/arrow.png" />
         </div>
       </div>
     </section>
@@ -287,7 +301,7 @@
       <a href="#">이용약관</a>
 
       |
-      <b align="center"> <a href="#">개인정보처리방침</a></b>
+      <b > <a href="#">개인정보처리방침</a></b>
       |
       <a href="#"> 고객센터</a>
       </tr>

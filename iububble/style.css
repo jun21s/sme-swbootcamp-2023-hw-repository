@@ -6,9 +6,17 @@ header {
   margin: 0px;
   flex-wrap: nowrap;
 }
+header > img{
+  width: 5%;
+}
+#btns{
+  width: 25%;
+}
+
+
 /* 좌우 여백 */
 .main {
-  width: 70%;
+  width: 50%;
   margin: auto;
 }
 /* 배경색 설정 */
@@ -31,7 +39,7 @@ section > section {
 #logo > img {
   width: 100%;
 }
-/* 검색창 경계선 */
+/* 검색창  */
 #browse {
   border: solid 2px #03c75a;
   display: flex;
@@ -51,11 +59,14 @@ section > section {
 }
 /* 판 메뉴 모음 */
 .MenuWrapper {
-  width: 80px;
+  width: 5vw;
   padding: 10px;
   background-color: #ecf3f8;
   border-radius: 20%;
   margin: 15px;
+}
+.MenuWrapper > img {
+  width: 100%;
 }
 #menu {
   width: 100%;
@@ -147,6 +158,7 @@ tr > #selected {
   padding: 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 #popular_pan > .text {
   padding: 10px;
@@ -154,6 +166,10 @@ tr > #selected {
   justify-content: space-between;
 }
 
+.popular_pan{
+  display: flex;
+  align-items: center;
+}
 /* 네이버 앱 광고 */
 #naverApp {
   display: flex;
@@ -165,7 +181,11 @@ tr > #selected {
   display: flex;
   align-items: center;
 }
-
+#usebtn{
+  border : solid 1px rgb(82,155,221);
+  color : rgb(82,155,221);
+  padding : 5px;
+}
 /* 네이버앱 업데이트 알림 */
 #notice {
   padding: 20px;
