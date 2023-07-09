@@ -40,7 +40,7 @@ table{
 
 /* 검색창 부분 모양 만들기 */
 .search_bar{
-    border: 2px solid greenyellow;
+    border: 2px solid rgb(1,199,91);
     background-color: white;
     width: 600px;
     height: 40px;
@@ -49,6 +49,7 @@ table{
 .search_right{
     position: absolute;
     right: 0px;
+    
 }
 /* 뒤에 배경이랑 자연스럽게 하기 위해서 outline none */
 .search_box{
@@ -98,20 +99,20 @@ table{
 /* 테두리 둥글게 */
 .index1{
     display:inline-block;
-    background-color: rgb(230, 231, 235);
-    border-radius: 15%;
+    background-color: rgb(243,246,252);
+    border-radius: 5%;
 }
 .index2{
     display:inline-block;
-    background-color: rgb(127, 141, 188);
-    border-radius: 15%;
+    background-color: rgb(119,149,205);
+    border-radius: 5%;
 }
 .weather{
     width: 500px;
     
 }
 #today{
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(120,123,131);
     border-radius: 15%;
 }
 .weather_all{
@@ -119,7 +120,7 @@ table{
     width: 530px;
     background-color: transparent;
 }
-
+/* 가운데 정렬 vertical-align: middle; */
 .covid0{
     display: inline-block;
     width: 530px;
@@ -128,6 +129,7 @@ table{
 .covid_ox{
     position: relative;
     right: 45px;
+    vertical-align: middle;
 }
 .covid_ox1{
     position: relative;
@@ -136,11 +138,13 @@ table{
 .covid_pic{
     position:relative;
     left: 20px;
+    vertical-align: middle;
 }
 .covid_pic1{
     position:relative;
     left: 20px;
 }
+
 
 .government1{
     display: inline-block;
@@ -211,13 +215,13 @@ table{
 .pan_left1{
     position: relative;
     right: 10px;
-    background-color: rgb(230, 231, 235);
+    background-color: rgb(245,247,249);
 }
 .movie, .bboom, .webtoon, .economic_pan{
     vertical-align: middle;
 }
 .pan_right1{
-    background-color: rgb(230, 231, 235);
+    background-color: rgb(245,247,249);
 }
 /* .block{
     background-color: beige;
