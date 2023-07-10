@@ -4,7 +4,6 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1,maximum-scale=1" />
         <title>NAVER</title>
-        <link rel="stylesheet" href="nstyle.css"></link>
         <style>
             header {
                 height: 170px;
@@ -69,15 +68,14 @@
         </header>
         <main>
             <style>
-                table {
+                .pan-list {
                     margin-left: auto;
                     margin-right: auto;
                     font-size: 10px;
                     color: rgb(157, 157, 157);
+                    padding-bottom: 125px;
+                    border-spacing: 40px;
                 }
-                th, td {
-                        padding: 25px;
-                    }
                 .main-container {
                     width: 500px;
                     margin: auto;
@@ -87,14 +85,13 @@
                     gap: 10px;
                 }
                 .temp-box {
-                    background-color: darkseagreen;
+                    background-color: rgb(241, 241, 241);
                     width: 100%;
                     height: 100%;
                     font-size: 13px;
                 }
-                
             </style>
-            <table>
+            <table class="pan-list">
                 <tr align="center">
                     <th><img src="images/n.png" height="50"><br>
                     <span>뉴스판</span></th>
@@ -117,16 +114,26 @@
                 </tr>
             </table>
             <div class="main-container">
-                <div class="temp-box">10º 맑음<br>
-                어제보다 2º 높아요</div>
-                <div class="temp-box">날씨 &nbsp;&nbsp;서울시 잠실동
+                <div class="temp-box">
+                    <span class="sunny">
+                    <img src="images/moon.JPG" height="53px">
+                    </span><b>10º 맑음</b><br>
+                    <span class="su-1">
+                    어제보다 2º 높아요</span>
+                </div>
+                <div class="temp-box">
+                    <span class="weather"><b>날씨</b>
+                    </span>
+                    <span class="area">
+                        서울시 잠실동
+                    </span>
                     <div class="weather-button">
                         <button>시간대별 날씨</button>
                         <button>시간대별 미세먼지</button>
                         <button>주간 날씨</button>
                         <button>주간 미세먼지</button>
                     </div>
-                    <table>
+                    <table class="weather-week">
                         <tr align="center">
                             <th>19º</th>
                             <th>22º</th>
@@ -161,15 +168,33 @@
                             <td>6º</td>
                         </tr>
                         <tr align="center">
-                            <td>해</td>
-                            <td>해</td>
-                            <td>비</td>
-                            <td>비</td>
-                            <td>해</td>
-                            <td>해</td>
-                            <td>해</td>
-                            <td>해</td>
-                            <td>해</td>
+                            <td>
+                                <img src="images/sun.JPG" height="25px">
+                            </td>
+                            <td>
+                                <img src="images/sun.JPG" height="25px">
+                            </td>
+                            <td>
+                                <img src="images/rain.JPG" height="25px">
+                            </td>
+                            <td>
+                                <img src="images/rain.JPG" height="25px">
+                            </td>
+                            <td>
+                                <img src="images/sun.JPG" height="25px">
+                            </td>
+                            <td>
+                                <img src="images/sun.JPG" height="25px">
+                            </td>
+                            <td>
+                                <img src="images/sun.JPG" height="25px">
+                            </td>
+                            <td>
+                                <img src="images/sun.JPG" height="25px">
+                            </td>
+                            <td>
+                                <img src="images/sun.JPG" height="25px">
+                            </td>
                         </tr>
                         <tr align="center">
                             <td>어제</td>
@@ -184,12 +209,60 @@
                         </tr>
                     </table>
                 </div>
-                <div class="temp-box">3</div>
-                <div class="temp-box">4</div>
-                <div class="temp-box">5</div>
-                <div class="temp-box">6</div>
-                <div class="temp-box">7</div>
-                <div class="temp-box">8</div>
+                <div class="temp-box">
+                    <span class="box3-left"><b>코로나19</b><br></span>
+                    <span class="box3-left">국내외 확진 현황
+                    </span>
+                    <span class="box3-right">
+                        <b>코로나19 팩트체크</b><br>
+                    </span>
+                    <span class="box3-right">
+                        백신 정보 팩트는?
+                    </span>
+                </div>
+                <div class="temp-box">
+                    <span class="date">
+                        제102주년 <b>대한민국 임시정부 수립일</b>
+                    </span>
+                </div>
+                <div class="temp-box">
+                    <img class="app" src="images/app.png" height="35px">
+                    <span class="app">
+                        앱으로 <b>새로운 네이버</b>를 더 쾌적하게 사용해 보세요.
+                    </span>
+                    <button class="use-app">
+                        앱 사용하기
+                    </button>
+                </div>
+                <div class="temp-box">
+                    <span class="webtoon">
+                        <b>웹툰</b>
+                    </span>
+                </div>
+                <div class="temp-box">
+                    <span class="po-pan">
+                        <b>인기 주제 판을 확인해 보세요!</b>
+                    </span>
+                    <span class="manage-pan">
+                        판관리
+                    </span>
+                    <table class="bottom-pan">
+                        <tr>
+                            <th>영화판</th>
+                            <th>뿜판</th>
+                        </tr>
+                        <tr>
+                            <td>웹툰판</td>
+                            <td>경제M판
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="temp-box">
+                    <span class="update">
+                        <b>네이버앱 업데이트 사전 안내</b>
+                    </span>
+                </div>
             </div>
         </main>
         <footer>
