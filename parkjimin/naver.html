@@ -85,12 +85,167 @@
                     gap: 10px;
                 }
                 .temp-box {
-                    background-color: rgb(241, 241, 241);
+                    background-color: rgb(250, 250, 250);
                     width: 100%;
                     height: 100%;
+                }
+                .moon {
+                    position: relative;
+                    left: 15px;
+                    top: 15px;
+                }
+                .sunny {
+                    position: relative;
+                    left: 20px;
+                    bottom: 20px;
+                    font-size: 15px;
+                }
+                .su-1 {
+                    position: relative;
+                    left: 75px;
+                    bottom: 20px;
+                    font-size: 12px;
+                }
+                .now {
+                    position: relative;
+                    left: 188px;
+                    top: 13px;
+                }
+                .weather {
+                    position: relative;
+                    left: 15px;
+                    top: 10px;
+                    font-size: 15px;
+                }
+                .area {
+                    position: relative;
+                    left: 25px;
+                    top: 10px;
+                    font-size: 14px;
+                    color: rgb(136, 136, 136);
+                }
+                .loca {
+                    position: relative;
+                    left: 22px;
+                    top: 13px;
+                }
+                .weather-button {
+                    position: relative;
+                    left: 18px;
+                    top: 20px;
+                }
+                .weather-week {
+                    position: relative;
+                    top: 30px;
+                    left: 5px;
+                    width: 480px;
+                    height: 190px;
+                    font-size: 14px;
+                }
+                .corona {
+                    position: relative;
+                    left: 15px;
+                    top: 15px;
+                }
+                .box3-left {
+                    position: relative;
+                    top: 7px;
+                    left: 13px;
+                }
+                .box3-left-1 {
+                    position: relative;
+                    top: 3px;
+                    left: 13px;
+                    font-size: 14px;
+                    color: rgb(93, 93, 93);
+                }
+                .fact {
+                    position: relative;
+                    left: 130px;
+                    bottom: 14px;
+                }
+                .box3-right {
+                    position: relative;
+                    left: 130px;
+                    bottom: 20px;
+                }
+                .box3-right-1 {
+                    position: relative;
+                    left: 240px;
+                    bottom: 15px;
+                    font-size: 14px;
+                    color: rgb(93, 93, 93);
+                }
+                .g102 {
+                    position: relative;
+                    top: 5px;
+                    left: 110px;
+                }
+                .date {
+                    position: relative;
+                    bottom: 5px;
+                    left: 110px;
+                    font-size: 14px;
+                    color: rgb(93, 93, 93);
+                }
+                .app {
+                    position: relative;
+                    left: 10px;
+                    top: 15px;
+                }
+                .app-1 {
+                    position: relative;
+                    left: 5px;
+                    bottom: 3px;
                     font-size: 13px;
                 }
+                .use-app {
+                    position: relative;
+                    left: 35px;
+                    bottom: 3px;
+                }
+                .webtoon {
+                    position: relative;
+                    font-size: 17px;
+                    left: 15px;
+                    top: 8px;
+                }
+                .po-pan {
+                    position: relative;
+                    top: 15px;
+                    left: 15px;
+                }
+                .manage-pan {
+                    position: relative;
+                    top: 15px;
+                    left: 210px;
+                    font-size: 14px;
+                    color: rgb(93, 93, 93);
+                }
+                .bottom-pan {
+                    position: relative;
+                    left: 10px;
+                    top: 20px;
+                    width: 500px;
+                    text-align: left;
+                    border-spacing: 10px;
+                    font-size: 14px;
+                    color: rgb(93, 93, 93);
+                }
+                .alarm {
+                    position: relative;
+                    left: 15px;
+                    top: 25px;
+                }
+                .update {
+                    position: relative;
+                    left: 20px;
+                    top: 20px;
+                    font-size: 14px;
+                    color: rgb(93, 93, 93);
+                }
             </style>
+
             <table class="pan-list">
                 <tr align="center">
                     <th><img src="images/n.png" height="50"><br>
@@ -115,11 +270,14 @@
             </table>
             <div class="main-container">
                 <div class="temp-box">
+                    <img class="moon" src="images/moon.JPG" height="53px">
                     <span class="sunny">
-                    <img src="images/moon.JPG" height="53px">
-                    </span><b>10º 맑음</b><br>
+                        <b>10º 맑음</b>
+                    </span>
+                    <img class="now" src="images/now.JPG" height="50px">
                     <span class="su-1">
-                    어제보다 2º 높아요</span>
+                        <br>어제보다 2º 높아요
+                    </span>
                 </div>
                 <div class="temp-box">
                     <span class="weather"><b>날씨</b>
@@ -127,6 +285,7 @@
                     <span class="area">
                         서울시 잠실동
                     </span>
+                    <img class="loca" src="images/location.jpg" height="18px">
                     <div class="weather-button">
                         <button>시간대별 날씨</button>
                         <button>시간대별 미세먼지</button>
@@ -210,24 +369,30 @@
                     </table>
                 </div>
                 <div class="temp-box">
-                    <span class="box3-left"><b>코로나19</b><br></span>
-                    <span class="box3-left">국내외 확진 현황
+                    <img class="corona" src="images/corona.JPG" height="25px">
+                    <span class="box3-left">
+                        <b>코로나19</b><br>
                     </span>
+                    <span class="box3-left-1">
+                        국내외 확진 현황
+                    </span>
+                    <img class="fact" src="images/fact.JPG" height="25px">
                     <span class="box3-right">
                         <b>코로나19 팩트체크</b><br>
                     </span>
-                    <span class="box3-right">
+                    <span class="box3-right-1">
                         백신 정보 팩트는?
                     </span>
                 </div>
                 <div class="temp-box">
+                    <img class="g102" src="images/102.JPG" height="35px">
                     <span class="date">
                         제102주년 <b>대한민국 임시정부 수립일</b>
                     </span>
                 </div>
                 <div class="temp-box">
-                    <img class="app" src="images/app.png" height="35px">
-                    <span class="app">
+                    <img class="app" src="images/app.png" height="50px">
+                    <span class="app-1">
                         앱으로 <b>새로운 네이버</b>를 더 쾌적하게 사용해 보세요.
                     </span>
                     <button class="use-app">
@@ -248,17 +413,29 @@
                     </span>
                     <table class="bottom-pan">
                         <tr>
-                            <th>영화판</th>
-                            <th>뿜판</th>
+                            <th>
+                                <img src="images/m_pan.JPG" height="25px">
+                                영화판
+                            </th>
+                            <th>
+                                <img src="images/b_pan.JPG" height="25px">
+                                뿜판
+                            </th>
                         </tr>
                         <tr>
-                            <td>웹툰판</td>
-                            <td>경제M판
+                            <td>
+                                <img src="images/w_pan.JPG" height="25px">
+                                웹툰판
+                            </td>
+                            <td>
+                                <img src="images/e_pan.JPG" height="25px">
+                                경제M판
                             </td>
                         </tr>
                     </table>
                 </div>
                 <div class="temp-box">
+                    <img class="alarm" src="images/alarm.JPG" height="23px">
                     <span class="update">
                         <b>네이버앱 업데이트 사전 안내</b>
                     </span>
@@ -271,12 +448,22 @@
                     list-style: none;
                 }
                 .flinks {
-                    font-size: 12px;
+                    position: relative;
+                    font-size: 14px;
                     display: inline-block;
                     text-align: center;
                     width: 100%;
                     height: 100%;
+                    top: 50px;
                     justify-content: space-between;
+                }
+                .f-logo {
+                    position: relative;
+                    font-size: 20px;
+                    color: rgb(161, 161, 161);
+                    left: 505px;
+                    bottom: 50px;
+                    text-align: center;
                 }
             </style>
             <div class="flinks">
@@ -287,6 +474,9 @@
                 <a href="/" class="flink-text">개인정보처리방침</a>
                 <a href="/" class="flink-text">고객센터</a>
             </div>
+            <span class="f-logo">
+                <b>NAVER</b>
+            </span>
         </footer>
     </body>
 </html>
