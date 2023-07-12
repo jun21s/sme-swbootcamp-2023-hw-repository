@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<!-- TODO: 또 무엇이 필요할까요? -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- 원래는 네이버 서버 프로젝트 폴더에서 가져옴. -->
+		<link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/AnYeHyeon/img/main/favicon.ico">  
+		<title>Naver</title>
+		<style>
+			html, body, form{
+				margin: 0;
+				padding: 0;
+			}
+			#wrap {
+				text-align: center;
+			}
+			#wrap-center {
+				width: 700px;
+				display: inline-block;
+				/* background-color: aquamarine; */
+			}
+			#header {
+				text-align: left;
+				position: relative;
+				height: 200px;
+			}
+			#header-hamburger {
+				position: absolute;
+				margin: none;
+				padding: 5px;
+				display: inline-block;
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+			#header-hamburger > div {
+				background-image: url(https://raw.githubusercontent.com/AnYeHyeon/img/main/sp_main.png);
+				width: 44px;
+				height: 44px;
+				background-size: 324px 265px;
+    			background-position: -49px -411px;
+			}
+
+			#header-qrcheckin {
+				position: absolute;
+				right: 85px;
+				margin: none;
+				padding: 5px;
+				display: inline-block;
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+			#header-qrcheckin > div {
+				background-image: url(https://raw.githubusercontent.com/AnYeHyeon/img/main/sp_main.png);
+				width: 70px;
+				height: 44px;
+				background-size: 324px 265px;
+    			background-position: -245px -137px;
+			}
+
+			#header-navertalk {
+				position: absolute;
+				right: 45px;
+				margin: none;
+				padding: 5px;
+				display: inline-block;
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+			#header-navertalk > div {
+				background-image: url(https://raw.githubusercontent.com/AnYeHyeon/img/main/sp_main.png);
+				width: 40px;
+				height: 40px;
+				background-size: 324px 265px;
+    			background-position: -90px -191px;
+			}
+
+			#header-naverpay {
+				position: absolute;
+				right: 5px;
+				margin: none;
+				padding: 5px;
+				display: inline-block;
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+			#header-naverpay > div {
+				background-image: url(https://raw.githubusercontent.com/AnYeHyeon/img/main/sp_main.png);
+				width: 44px;
+				height: 44px;
+				background-size: 324px 265px;
+    			background-position: -212px -76px;
+			}
+			#main {
+				height: 2000px;
+			}
+			.blind {
+				position: absolute;
+				clip: rect(0 0 0 0);
+				width: 1px;
+				height: 1px;
+				margin: -1px;
+				overflow: hidden;
+			}
+			#big-logo {
+				position: absolute;
+				top: 130px;
+				left: 275px;
+				font-size: 50px;
+				font-weight: bold;				
+				color: #03c75a;
+
+			}
+
+			#search > form {
+					margin: 0 auto;
+					text-align: center;
+					width: 488px;
+					height: 52px;
+					border: 1px solid #03c75a;
+					border-radius: 5px;
+			}
+			#search > form > input {
+					text-align: left;
+					padding: 0;
+					width: 480px;
+					height: 98%;
+					border: none;
+					border-radius: 5px;
+					border-width: thin;
+			}
+			#microphone {
+				position: absolute;
+				top: 203px;
+    			right: 362px;
+				margin: none;
+				padding: 5px;
+				display: inline-block;
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+			#microphone > div {
+				background-image: url(https://raw.githubusercontent.com/AnYeHyeon/img/main/sp_main.png);
+				width: 33px;
+				height: 33px;
+				background-color: #03c75a;
+				background-size: 324px 265px;
+				background-position: -136px -194px;
+			}
+
+			#imgsearch {
+				position: absolute;
+				top: 203px;
+    			right: 325px;
+				margin: none;
+				padding: 5px;
+				display: inline-block;
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+			#imgsearch > div {
+				background-image: url(https://raw.githubusercontent.com/AnYeHyeon/img/main/sp_main.png);
+				width: 33px;
+				height: 33px;
+				background-color: #03c75a;
+				background-size: 324px 265px;
+				background-position: -253px -194px;
+			}
+
+			#location {
+				position: absolute;
+				top: 203px;
+    			right: 286px;
+				margin: none;
+				padding: 5px;
+				display: inline-block;
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+			#location > div {
+				background-image: url(https://raw.githubusercontent.com/AnYeHyeon/img/main/sp_main.png);
+				width: 33px;
+				height: 33px;
+				background-color: #03c75a;
+				background-size: 324px 265px;
+				background-position: -215px -194px;
+			}
+		</style>
+	</head>
+
+<body>
+	<div di="wrap">
+		<div id="wrap-center">
+			<div id="header">
+				<button id="header-hamburger">
+					<div></div>
+				</button>
+				<button id="header-qrcheckin">
+					<div></div>
+				</button>
+				<button id="header-navertalk">
+					<div></div>
+				</button>
+				<button id="header-naverpay">
+					<div></div>
+				</button>
+				<a href="#">
+					<div id="big-logo">NAVER</div>	
+				</a>
+			</div>
+			<div id="search">
+				<form action="">  <!-- enter로 다음페이지로 넘어감 -->
+					<label for="search-input" class="blind">검색어 입력</label>
+					<input type="text" title="검색어를 입력해주세요." placeholder="검색어를 입력해주세요." />
+					<button class="blind">검색</button>
+					<button id="microphone"><div></div></button>
+					<button id="imgsearch"><div></div></button>
+					<button id="location"><div></div></button>
+				</form>
+			</div>
+			<style>
+				#nav > ul {
+					display: flex;
+					list-style-type: none;
+					justify-content: center;
+					font-size: 12px;
+				}
+				#nav a {
+					text-decoration: none;
+					text-align: center;
+				}
+				#nav a div {
+					width: 44px;
+					height: 44px;
+					margin: 0 auto;
+					text-align: center;
+				}
+				#nav a div::after {
+					content: '';
+					display: inline-block;
+					background-image: url(https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512720230Vr2gk.png);
+					background-size: 41px 43px;
+					background-position: -6px -1px;
+					background-repeat: no-repeat;
+					width: 82px;
+					height: 44px;
+				}
+				#nav a:visited {
+					color: black;
+				}
+				#nav li {
+					width: 60px;
+    				margin-left: 4px;
+				}
+				#nav li:nth-of-type(1) {
+					margin-left: 0;
+				}
+				#nav li:nth-of-type(1) {
+
+				}
+				#nav li:nth-of-type(1) {
+
+				}
+			</style>
+			<div id="nav">
+				<ul>
+					<li>
+						<a href="">
+							<div></div>
+							<span>뉴스판</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div></div>
+							<span>경제지표판</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div></div>
+							<span>연예판</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div></div>
+							<span>트렌드판</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div></div>
+							<span>메일</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div></div>
+							<span>카페</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div></div>
+							<span>블로그</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div></div>
+							<span class="blind">더보기</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="main"></div>
+				
+		</div>
+	</div>
+</body>
+</html>
