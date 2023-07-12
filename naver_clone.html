@@ -1,0 +1,145 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>NAVER</title>
+    </head>
+
+    <style>
+        body{
+            background: linear-gradient(white, #EBF2F7);
+        }
+
+        .right-menu{
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+
+        .title {
+            width: 200;
+            display: flex;
+            justify-content: center;
+            margin: 10 auto auto auto;
+        }
+
+        .search {
+            width: 500;
+            height: 50;
+            border-radius: 10px;
+            border: 2px solid #01c75b;
+            display: flex;
+            justify-content: center;
+            margin: 20 auto auto auto;
+        }
+
+        .search input {
+            width: 360;
+            height: 50;
+            border: none;
+            font-size: 15px;
+            color: #d3d3d3;
+        }
+
+        .tools_1 {
+            width: 200;
+            display: flex;
+            justify-content: center;
+            margin: 10 auto auto auto;
+        }
+
+        .news {
+            margin: auto 50 auto auto;
+        }
+
+        .economy {
+            margin: auto 50 auto auto;
+        }
+
+        .entertainment {
+            margin: auto 50 auto auto;
+        }
+
+        .tools_2 {
+            width: 200;
+            display: flex;
+            justify-content: center;
+            margin: 20 auto auto auto;
+        }
+
+        .mail {
+            margin: auto 50 auto auto;
+        }
+
+        .cafe {
+            margin: auto 50 auto auto;
+        }
+
+        .blog {
+            margin: auto 50 auto auto;
+        }
+
+    </style>
+
+    <body>
+        <div class="menu">
+            <a href="https://m.naver.com/aside/">
+                <img src="menu.png" width="50">
+            </a>
+
+            <div class="right-menu">
+                <img src="QR.png" width="50">
+                <a href="https://new-m.pay.naver.com/pcpay?page=1">
+                    <img src="NPay.png" width="50">
+                </a>
+                    <img src="wallet.png" width="50">
+            </div>
+        </div>
+
+        <div class="title">
+            <a href="https://m.naver.com/">
+                <img src="title.png" class="title">
+            </a>
+        </div>
+
+        <div class="search">
+            <form action="https://search.naver.com/search.naver" method="GET">
+                <input name="query" type="text" value="검색어를 입력해주세요" />
+            </form>
+            <button>
+                <img src="search_tool.png" height="45" />
+            </button>
+        </div>
+
+        <div class="tools_1">
+            <a href="https://m.naver.com/naverapp/?cmd=onMenu&menuCode=NEWS&showConfirm=false">
+                <img src="news.png" class="news" width="50">
+            </a>
+            <a href="https://m.naver.com/naverapp/?cmd=onMenu&menuCode=DATA&showConfirm=false&newMain=Y">
+                <img src="economy.png" class="economy" width="50">
+            </a>
+            <a href="https://m.naver.com/naverapp/?cmd=onMenu&menuCode=ENT&showConfirm=false">
+                <img src="entertainment.png" class="entertainment" width="50">
+            </a>
+            <!-- <a href="https://m.naver.com/aside/">/ -->
+                <img src="trend.png" class="trend" width="50">
+            <!-- </a> -->
+        </div>
+
+        <div class="tools_2">
+            <a href="https://m.mail.naver.com/v2/folders/0/all">
+                <img src="mail.png" class="news" width="50">
+            </a>
+            <a href="https://m.cafe.naver.com/">
+                <img src="cafe.png" class="cafe" width="50">
+            </a>
+            <a href="https://m.blog.naver.com/FeedList.naver">
+                <img src="blog.png" class="blog" width="50">
+            </a>
+            <a href="https://m.naver.com/services.html">
+                <img src="etc.png" class="etc" width="50">
+            </a>
+        </div>
+    </body>
+
+</html>
