@@ -8,24 +8,116 @@
     <meta name="author" content="iububble">
     <meta name="description" content="To Do List">
     <meta name="keywords" content="To Do List">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //bind는 depacrypt 되어서 대신 on 사용
+            //할일 작성 이벤트 등록
+            $("form").on("submit", function (e) {
+                //새로고침 방지
+                e.preventDefault();
+                //입력값 변수에 저장
+                var value = $("form > input").first().val()
+                //할일 목록 추가
+                $("#list ul").append(
+                    "<li class='doing'>" +
+                    //flex 정렬 위해 div로 묶음
+                    "<div>" +
+                    "<input class='chk' type = 'checkbox' > " +
+                    //`(백틱=키보드 물결표)를 따옴표 대신 사용하면 ${}를 통해 문자열 내부에 변수를 넣을 수 있다.
+                    `<input class='things' value=${value} readonly>` +
+                    "</div>" +
+
+                    "<div>" +
+                    "<button class='delete'>❌</button>" +
+                    "<button class='edit'>✏️</button>" +
+                    "</div>" +
+                    "</li>"
+                )
+                //입력창 초기화
+                $("input").first().val("")
+            })
+            //전체 삭제 이벤트 등록
+            $("#alldelete").on("click", function (e) {
+                $(".doing").detach()
+            })
+            //전체 선택 이벤트 등록
+            $('#allselect').on('click', function (e) {
+
+                $(".chk").prop("checked", true)
+                //$(".chk").trigger("click")
+            })
+            //전체 해제 이벤트 등록
+            $('#noselect').on('click', function (e) {
+                $(".chk").prop("checked", false)
+            })
+            //개별 삭제 이벤트 등록
+            $(".doings").on('click', function (e) {
+                if (e.target.className == 'delete') {
+                    //li tag 선택
+                    var target = e.target.parentElement.parentElement
+                    target.remove()
+                }
+            })
+            //선택 삭제 이벤트 등록
+            $("#selectdelete").on('click', function (e) {
+                $(":checked").each(function (index, elem) {
+                    elem.parentElement.parentElement.remove()
+                });
+            }
+            )
+            //개별 수정 이벤트 등록
+            $(".doings").on('click', function (e) {
+                if (e.target.className == 'edit') {
+                    //input readonly option 해제
+                    $(e.target).parent().parent().children(':nth-child(1)').children('.things').prop('readonly', false)
+                    $(e.target).parent().parent().children(':nth-child(1)').children('.things').trigger('focus')
+                    //수정 사항 확정 버튼 추가
+                    $(e.target).parent().append("<button class='save'>✅</button>")
+                    //기존 수정 버튼 삭제
+                    $(e.target).remove()
+                }
+            })
+            //개별 수정 후 수정사항 확정 이벤트 등록
+            $('.doings').on('click', function (e) {
+                if (e.target.className == 'save') {
+                    //수정 뒤 변경 못하도록 변경
+                    $(e.target).parent().parent().children(':nth-child(1)').children('.things').prop('readonly', true)
+                    //수정 버튼 다시 추가
+                    $(e.target).parent().append("<button class='edit'>✏️</button>")
+                    //확정 버튼 삭제
+                    $(e.target).remove()
+                }
+            })
+        })
+
+    </script>
     <header>
-        <h1>To Do List</h1>
+        <h1>TO DO LIST</h1>
     </header>
     <section id="main">
-        <input placeholder="할 일을 입력하세요">
-        <button>Enter</button>
+        <form>
+            <input placeholder="할 일을 입력하세요">
+            <button type="submit" id="add">Enter</button>
+        </form>
+
     </section>
     <section id="list">
-        <ul>
-            <li>할 일 1</li>
-            <li>할 일 2</li>
-            <li>할 일 3</li>
+        <ul class="doings">
+
         </ul>
+    </section>
+    <section id="buttons">
+        <button id="allselect">전체 선택</button>
+        <button id="noselect">전체 선택해제</button>
+        <button id="selectdelete">선택 삭제</button>
+        <button id="alldelete">전체 삭제</button>
+
     </section>
 </body>
 
