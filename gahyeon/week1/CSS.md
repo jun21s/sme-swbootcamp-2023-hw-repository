@@ -30,8 +30,9 @@ a:hover{color:yellow;}
 
 font-size 의 단위
 
-- px : 픽셀, 크기 고정
+- px : 픽셀, 크기 고정 표시장치(모니터)에 따라서 상대적인 크기를 가짐
 - em, rem : 사용자 브라우저 설정에 따라 변화.
+- % : percent, 기본글꼴의 크기에 대하여 상대적인 값을 가짐
 
 text-align
 
@@ -72,14 +73,6 @@ position
 ---
 
 ###<b>flex</b>
-
-```
-<div class="container">
-	<div class="item">helloflex</div>
-	<div class="item">abc</div>
-	<div class="item">helloflex</div>
-</div>
-```
 
 .container {
 
