@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="todo_list.js"></script>
+</head>
+<body>
+
+    <style>
+    input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #f199bc;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: border-color 0.2s ease-in-out;
+    }
+
+/* 체크박스 체크 상태 스타일 */
+    input[type="checkbox"]:checked {
+    background-color: #f199bc;
+    }
+
+/* 체크박스 커스텀 체크 표시 */
+    input[type="checkbox"]:checked::before {
+    content: "\2713";
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+        h1{
+            color: #f199bc;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 60px;
+        }
+
+        #container {
+            background-color: rgba(126, 238, 61, 0.339);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin : 20px auto;
+            padding : 30px;
+            width : 600px;
+            border-radius: 15px;
+
+        }
+
+    #list input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+    #list span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+        #todolist {
+            height: 32px;
+            font-size: 15px;
+            border: 0;
+            border-radius: 15px;
+            outline: none;
+            padding-left: 10px;
+            background-color: rgb(233, 233, 233);
+        }
+
+        #click {
+            background-color: #f199bc;
+            color: #ffffff;
+            position: relative;
+            border: none;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-family: "paybooc-Light", sans-serif;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+
+        }
+
+        #click:hover {
+        letter-spacing: 2px;
+        transform: scale(1.2);
+        cursor: pointer;
+        }
+
+        #click:active {
+            transform: scale(1.5);
+        }
+
+        #click2 {
+            background-color: #f199bc;
+            color: #ffffff;
+            position: relative;
+            border: none;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-family: "paybooc-Light", sans-serif;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+
+        }
+
+        #click2:hover {
+        letter-spacing: 2px;
+        transform: scale(1.2);
+        cursor: pointer;
+        }
+
+        #click2:active {
+            transform: scale(1.5);
+        }
+
+        #click3 {
+            background-color: #f199bc;
+            color: #ffffff;
+            position: relative;
+            border: none;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-family: "paybooc-Light", sans-serif;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+
+        }
+
+        #click3:hover {
+        letter-spacing: 2px;
+        transform: scale(1.2);
+        cursor: pointer;
+        }
+
+        #click3:active {
+            transform: scale(1.5);
+        }
+
+        #click4 {
+            background-color: #f199bc;
+            color: #ffffff;
+            position: relative;
+            border: none;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-family: "paybooc-Light", sans-serif;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+
+        }
+
+        #click4:hover {
+        letter-spacing: 2px;
+        transform: scale(1.2);
+        cursor: pointer;
+        }
+
+        #click4:active {
+            transform: scale(1.5);
+        }
+        
+        .save {
+            background-color: #f199bc;
+            color: #ffffff;
+            position: relative;
+            border: none;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-family: "paybooc-Light", sans-serif;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+
+        }
+
+        .save:hover {
+        letter-spacing: 2px;
+        transform: scale(1.2);
+        cursor: pointer;
+        }
+
+        .save:active {
+            transform: scale(1.5);
+        }
+
+        
+    </style>
+
+<h1 id="title">To Do List</h1>
+
+<div id="container">
+
+    <div id="inputdiv">
+    <input type="text" id="todolist" placeholder="할 일을 입력하세요" >
+    <input id="click" type="button" value="Enter" onclick="listmaking()">
+    <p id="list"></p>
+
+    </div>
+
+    <div id="clickdiv">
+    <input type="button" id="click2" value="Select All" onclick="selectAll()">
+    <input type="button" id="click3" value="Unselect" onclick="unselectAll()">
+    <input type="button" id="click4" value="Delete" onclick="deleted()">
+    </div>
+    <br>
+
+    <div>
+    <input class="save" type="button" value="Save" id="readonlyOn" onclick="setReadOnly(true)"></input>
+
+    <input type="button" class="save" value="Alter" id="readonlyOff" onclick="setReadOnly(false)">
+    </input>
+    </div>
+
+</div>
+</body>
+</html>
