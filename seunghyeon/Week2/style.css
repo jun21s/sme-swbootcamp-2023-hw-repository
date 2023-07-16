@@ -1,0 +1,46 @@
+body{
+    width: 1150px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 9rem;
+    margin-left: 270px;
+    background-color: aliceblue;
+}
+#title{
+    font-size: 23px;
+}
+#bar{
+    width: 1030px;
+    height: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+#button{
+    width: 70px;
+    height: 45px;
+}
+main{
+    width: 1110px;
+    height: 220px;
+    background-color:white;
+    margin-left: 20px;
+}
+footer{
+    margin-top: 15px;
+    text-align: right;
+    margin-right: 17px;
+}
+footer input{
+    background-color: blueviolet;
+    color:white;
+    border: none;
+    border-radius: 3px;
+}
+ul li{
+    list-style-type: none;
+    margin-top: 15px;
+    font-size: 30px;
+    text-align: left;
+}
