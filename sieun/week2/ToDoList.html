@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TDLstyle.css">
+    <title>To Do List</title>
+  </head>
+  <body>
+    <header>
+      <!--제목 글자-->
+      <h1 class = "Title" >To Do List</h1>
+    </header>
+    
+    <section class="main">
+      <!--todo입력창-->
+      <div class = "inputList">
+        <input type="text" placeholder="해야할 일을 입력해 주세요." id="inputList_text">
+        <button id="addButton" type="button"><b>Enter</b></button>
+      </div>
+
+      <div class = "ToDoList">
+        <div class="listbox">
+          <ul id="list"></ul>
+        </div>
+        <div class="bottom_buttons">
+          <button id="buttons" type="button" onclick="allchecked()">전체 선택</button>
+          <button id="buttons" type="button" onclick="allunchecked()">전체 해제</button>
+          <button id="buttons" type="button" onclick="deletechecked()">선택 삭제</button>
+          <button id="buttons" type="button" onclick="deleteall()">전체 삭제</button>
+        </div>
+      </div>
+      
+    </section>
+
+    <script src="ToDoList.js"></script>
+  </body>
+</html>

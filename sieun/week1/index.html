@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<title>NAVER</title>
+	</head>
+	<body>
+		<header>
+		<!--맨 위줄-->
+		<div style="display:flex; justify-content: space-between; margin: 10px">
+				<img src="img/menubar.png" style="height:25px;">
+				<img src="img/qr&naverpay.png" style="height:30px;">
+		</div>
+
+		<!--네이버 글자-->
+		<a href="index.html">
+			<div style="margin: 80px 0px -30px 0px; text-align: center;">
+			<img src="img/naver.png" style="height: 45px;"/>
+		</div>
+		</a>
+
+		<!--검색어 입력 부분-->
+		<div class="search">
+			<form>
+				<input id="search-input" type="text" placeholder="검색어를 입력해주세요."/>
+			</form>
+			<img src="img/search.png" style="height: 45px; margin-right: 5px;">
+		</div>
+
+		<!--메뉴 나열 -->
+		<div style="display: flex; flex-direction:column; align-items:center;">
+				<table class="menutablerow1" style="margin-top: 30px;">
+					<tr>
+						<td><a href="https://news.naver.com/"><img src="img/menu1.png" class="menutableImg"><div class="overlay"></div></a></td>
+						<td><a href="https://m.stock.naver.com/"><img src="img/menu2.png" class="menutableImg"><div class="overlay"></div></a></td> 
+						<td><a href="https://entertain.naver.com/home"><img src="img/menu3.png" class="menutableImg"><div class="overlay"></div></a></td>
+						<td><a href="https://datalab.naver.com/"><img src="img/menu4.png" class="menutableImg"><div class="overlay"></div></a></td>
+					</tr>
+					<tr>	
+						<td>뉴스판</td>
+						<td>경제지표판</td>
+						<td>연예판</td>
+						<td>트랜드판</td>
+					</tr>
+				</table>
+				<table class="menutablerow2" style="margin-top: 20px;">
+					<tr>	
+						<td><a href="https://mail.naver.com/"><img src="img/menu5.png" class="menutableImg"><div class="overlay"></div></a></td> 
+						<td><a href="https://section.cafe.naver.com/"><img src="img/menu6.png" class="menutableImg"><div class="overlay"></div></a></td> 
+						<td><a href="https://section.blog.naver.com/"><img src="img/menu7.png" class="menutableImg"><div class="overlay"></div></a></td> 
+						<td><a href="https://www.naver.com/more.html"><img src="img/menu8.png" class="menutableImg"><div class="overlay"></div></a></td>
+					</tr>
+					<tr>	
+						<td>메일</td>
+						<td>카페</td>
+						<td>블로그</td>
+						<td></td>
+					</tr>
+				</table>
+		</div>
+		</header>
+
+		<section class="main">
+			<!--10도 맑음-->
+			<div class="mainbackground" style="align-items: center; height: 90px; border-radius: 7px 7px 0 0; margin-top: 150px;">
+				<div style="width: 300px;">
+					<img src="img/sunny.png" style="float: left; width:35px; margin: 0px 5px 0px 20px;">
+					<p style="font-size: medium; color: rgba(81, 81, 81, 0.99)"><b>10° 맑음</b></p>
+					<p style="font-size: small; color: rgba(107, 107, 107, 0.825)">어제보다 2° 높아요</p>
+				</div>
+					<div>
+						<a href="https://now.naver.com/"><img src="img/streaming.png" style="height:55px;"></a>
+					</div>
+			</div>
+
+			<!--날씨-->
+			<div class="mainbackground" style="height: 250px; border-radius: 7px;">
+				<div style="position: absolute; margin: 20px 0px 0px 20px;">
+					<span style = "font-size: medium;"><b>날씨</b></span>
+					<span style="font-size: small; color:gray; margin-left: 7px ;">서울시 잠실동</span>
+					<span><img src="img/shoot.png" style="width:15px; margin: 0px 0px -2px -2px;"></span>
+				</div>
+				<div style="display: flex; justify-content: flex-end; align-items: center; position: absolute; top: 5px; right: 5px;">
+					<img src="img/uparrow.png" style="width: 35px;"></div>
+				<div style="display: flex; flex-direction: row; justify-content: center; padding-top: 20px;">
+					<table style="text-align:center; font-size: small; width: 95%; height: 50%; table-layout: fixed; margin: 90px 0px 0px 0px;">
+						<tr style="font-weight: 600;">
+							<td>19°</td> <td>22°</td> <td>17°</td> <td>18°</td> <td>17°</td> <td>19°</td> <td>19°</td> <td>19°</td> <td>18°</td>
+						</tr>
+						<tr>
+							<td><div class = "weatherfont1">|</div></td> <td><div class = "weatherfont1">|</div></td>
+							<td><div class = "weatherfont1">|</div></td> <td><div class = "weatherfont1">|</div></td>
+							<td><div class = "weatherfont1">|</div></td> <td><div class = "weatherfont1">|</div></td>
+							<td><div class = "weatherfont1">|</div></td> <td><div class = "weatherfont1">|</div></td>
+							<td><div class = "weatherfont1">|</div></td>
+						</tr>
+						<tr>
+							<td>8°</td ><td>7°</td> <td>11°</td> <td>12°</td> <td>4°</td> <td>4°</td> <td>6°</td ><td>8°</td> <td>6°</td>
+						</tr>
+						<tr>
+							<td><img src="img/sun.png" style="width:35px;"></td>
+							<td><img src="img/sun.png" style="width:35px;"></td>
+							<td><img src="img/rain.png" style="width:45px;"></td>
+							<td><img src="img/rain.png" style="width:45px;"></td>
+							<td><img src="img/sun.png" style="width:35px;"></td>
+							<td><img src="img/sun.png" style="width:35px;"></td>
+							<td><img src="img/sun.png" style="width:35px;"></td>
+							<td><img src="img/sun.png" style="width:35px;"></td>
+							<td><img src="img/sun.png" style="width:35px;"></td>
+						</tr>
+						<tr>
+							<td><div class = "weatherfont2">어제</div></td>
+							<td><div class = "weatherfontselect">오늘</div></td>
+							<td><div class = "weatherfont2">월</div></td>
+							<td><div class = "weatherfont2">화</div></td>
+							<td><div class = "weatherfont2">수</div></td>
+							<td><div class = "weatherfont2">목</div></td>
+							<td><div class = "weatherfont2">금</div></td>
+							<td><div class = "weatherfont2">토</div></td>
+							<td><div class = "weatherfont2">일</div></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div style="display: flex; position: absolute; z-index: 1; margin: -200px 0px 0px 470px">
+				<div class="weatherbox" style="margin-left: 20px;">
+						<p style="color:rgb(74, 74, 74);">시간대별 날씨</p>
+				</div>
+				<div class="weatherbox">
+						<p style="color:rgb(74, 74, 74)">시간대별 미세먼지</p>
+				</div>
+				<div class="weatherbox" style="background-color:#7896CA;">
+						<p style="color:white"><b>주간 날씨</b></p>
+				</div>
+				<div class="weatherbox">
+						<p style="color:rgb(74, 74, 74)">주간 미세먼지</p>
+				</div>
+			</div>
+
+			<!--코로나-->
+			<div class="mainbackground" style="height: 80px;">
+				<div class= "corona" style="margin: auto 4px;">
+					<img src="img/covid19.png" style="width:25px; float: left; margin-top: 2pt;">
+					<p style="margin-top:7px; font-size: medium;"><b>코로나19</b></p>
+					<p style="color: rgb(90, 90, 90); margin-top: 5px; font-size: small;">국내외 확진 현황</p>
+				</div>
+				<div style="width: 20px; margin: auto;">
+					<img src="img/line.png" style="height:55px;">
+				</div>
+				<div class="corona" style="margin: auto;">
+					<img src="img/covid19fact.png" style="width:25px; float: left; margin-top: 2pt;">
+					<p style="margin-top:7px; font-size: medium;"><b>코로나19 팩트체크</b></p>
+					<p style="color: rgb(90, 90, 90); margin-top: 5px; font-size: small;">백신 정보 팩트는?</p>
+				</div>
+			</div>
+
+
+			<!--임시정부 수립일-->
+			<div class="mainbackground" style="height: 60px; justify-content: center;">
+				<div style="display: flex; align-items: center; text-align: center;">
+					<div style="margin-right: 10px;"><img src="img/korea.png" style="width:42px;"></div>
+          <div><p style="color:rgb(99, 99, 99)">제102주년 <b>대한민국 임시정부 수립일</b></p></div>
+				</div>
+			</div>
+			
+
+			<!--네이버 앱-->
+			<div class="mainbackground" style="height: 77px; justify-content: space-between;">
+				<div style="display: flex; align-items: center; margin-left: 20px;">
+					<div><img src="img/naverlog.png" style="display: flex; align-items: center; width:35px; border-radius: 10px;"></div>
+					<div style="color: rgb(69, 69, 69); margin-left: 10px; font-size: 14px">앱으로 <b>새로운 네이버</b>를 더 쾌적하게 사용해 보세요.</div>
+				</div>
+				<div class="useapp">
+					<b>앱 사용하기</b>
+				</div>
+			</div>
+
+
+			<!--웹툰-->
+			<div class="mainbackground" style="height: 60px; justify-content: space-between; align-items: center;">
+				<div style="margin: 15pt;">
+					<div style="font-size:medium;"><b>웹툰</b></div>
+				</div>
+				<div>
+					<img src="img/downarrow.png" style="width:35px; margin-right: 7pt;">
+				</div>
+			</div>
+
+
+			<!--인기 주제 판-->
+			<div class="mainbackground" style="height: 180px; justify-content: center;">
+				<div>
+					<div style="display: flex; justify-content: space-between; align-items: center;">
+						<div><p style="margin: 22px 0px 16px 0px;"><b>인기 주제 판을 확인해 보세요!</b></p></div>
+						<div style="text-align: right; margin-right: 6px;"><p style="font-size: small; color: #999999;">핀관리</p></div>
+					</div>
+						<table style="width: 540px; height: 100px; color: gray; table-layout: fixed; font-size: 14px;">
+							<tr bgcolor="#F5F7F9" style="color:rgb(185, 185, 185); border: 3px solid #ffffff;">
+									<td style="position: relative; color:rgb(185, 185, 185); border: 3px solid #ffffff;">
+										<img src="img/rightarrowblack.png" style="width: 14px; position: absolute; right: 3%; top: 50%; transform: translateY(-50%);">
+										<img src="img/movie.png" class="panpicture"><span style="color:gray">영화판</span></td>
+									<td style="position: relative; color:rgb(185, 185, 185); border: 3px solid #ffffff;">
+										<img src="img/rightarrowblack.png" style="width: 14px; position: absolute; right: 3%; top: 50%; transform: translateY(-50%);">
+										<img src="img/bboom.png" class="panpicture"><span style="color:gray">뿜판</span></td>
+							</tr>
+							<tr bgcolor="#F5F7F9" style="color:rgb(185, 185, 185); border: 3px solid #ffffff;">
+									<td style="position: relative; color:rgb(185, 185, 185); border: 3px solid #ffffff;">
+										<img src="img/rightarrowblack.png" style="width: 14px; position: absolute; right: 3%; top: 50%; transform: translateY(-50%);">
+										<img src="img/webtoon.png" class="panpicture"><span style="color:gray">웹툰판</span></td>
+									<td style="position: relative; color:rgb(185, 185, 185); border: 3px solid #ffffff;">
+											<img src="img/rightarrowblack.png" style="width: 14px; position: absolute; right: 3%; top: 50%; transform: translateY(-50%);">
+											<img src="img/M.png" class="panpicture"><span style="color:gray">경제M판</span>
+									</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+
+			
+			<!--안내-->
+			<div class="mainbackground" style="align-items: center; height: 55px; justify-content: space-between;">
+				<div style="display: flex;">
+					<b class="notice">알립니다</b> 
+					<p style="font-size: 11pt;">
+						네이버앱 업데이트 사전 안내 </p>
+				</div>
+				<div>
+					<img id="rightarrow" src="img/rightarrow.png">
+				</div>
+			</div>
+		</section>
+
+		<footer style="margin:50px 0px 100px 0px;">
+			<div style="text-align:center; color:#999999; margin-top: 70px;">
+				<p style="font-size: small;"><a href="https://nid.naver.com/">로그인 </a> &nbsp|&nbsp <a href="https://www.naver.com/more.html"> 전체 서비스 </a> &nbsp|&nbsp <a href="https://www.naver.com/"> PC버전 </a></p>
+        <p style="font-size: small; margin-top: 7px;"><a href="https://policy.naver.com/policy/service.html"> 이용약관 </a> &nbsp|&nbsp <a href="https://policy.naver.com/policy-mobile/privacy.html"><b>개인정보처리방침</b></a> &nbsp|&nbsp <a href="https://help.naver.com/"> 고객센터 </a></p>
+			</div>
+			<div style="text-align:center; margin-top: 20px;">
+				<a href="index.html">
+					<img src="img/footnaver.png" style="height: 15px;"/>
+				</a>
+			</div>
+		</footer>
+	</body>
+</html>

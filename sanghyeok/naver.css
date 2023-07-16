@@ -1,0 +1,495 @@
+html {
+    font-size: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: linear-gradient(white, aliceblue);
+}
+
+header {
+    margin: 0 0 100px 0;
+}
+.top {
+    width: 100%;
+    height: 40px;
+    display: block;
+}
+.logo {
+    margin: 0 20%;
+}
+.logo h1 {
+    
+    font-size: 5rem;
+    color: #03CF5D;
+    text-align: center;
+    display: block;
+    margin: 8px;
+}
+
+
+.menu_icon {
+    float: left;
+}
+.menu_icon div {
+    width: 18px;
+    height: 1px;
+    background-color: black;
+    margin: 5px 5px;
+}
+
+.side_menu {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.side {
+    color: black;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 700;
+}
+.side_menu img {
+    margin: 6px;
+    border: 0.5px solid grey;
+    background-color: rgb(212, 201, 201);
+    padding: 3px;
+    border-radius: 20%;
+}
+
+.side {
+    padding: 2px;
+}
+
+
+#search {
+    margin: 0 0 120px 0;
+}
+.sch {
+    padding: 0 20px;
+    max-width: 488px;
+    margin: 0 auto;
+    display: block;
+}
+
+.sch_box {
+    width: 500px;
+    height: 52px;
+    padding: 0 1px;
+    border: 1.2px solid #03CF5D;
+    border-radius: 3px;
+    display: flex;
+}
+
+.sch_input {
+    flex: 1;
+    height: 100%;
+    padding: 0 80px 0 5px;
+    margin-right: 1px;
+}
+
+.sch_input input {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    border: 20px;
+    padding: 14px 10px;
+    font-size: 15px;
+    background-color: transparent;
+    box-sizing: content-box;
+}
+
+.sch_region {
+    padding: 5px;
+}
+
+.sch_image {
+    display: inline-block;
+    margin: 3px;
+}
+
+#main_menu {
+    max-width: 488px;
+    display:block;
+    margin: 0 auto;
+}
+
+#main_menu li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+.main {
+    list-style: none;
+    text-align: center;
+    color: rgb(189, 174, 174);
+    font-size: 11px;
+}
+
+.main img {
+    padding: 15px;
+    border: 2px solid transparent;
+    background-color:aliceblue;
+    border-radius: 18px;
+}
+
+.last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info_wrap a:first-child:before {
+    content: "";
+}
+
+.info_wrap a::before {
+    content: "|";
+}
+
+.weather {
+    height: 100%;
+    margin: 0 auto;
+}
+
+.menu1 {
+    max-width: 500px;
+    height: 80px;
+    border: 1px solid transparent;
+    background-color: white;
+    margin: 5px auto;
+}
+
+.today {
+    margin-top: 15px;
+    margin-left: 10px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.today_weather {
+    margin-left: 10px;
+}
+
+.today_weather h2 {
+    margin: 0;
+}
+
+.today_weather p {
+    margin: 0;
+}
+
+.other {
+    margin-top: 15px;
+    display: flex;
+    float: right;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+footer {
+    margin-top: 50px;
+}
+.last {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.last_menu {
+    font-size: 12px;
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info_wrap {
+    margin: 5px;
+}
+.last_logo {
+    margin-top: 10px;
+}
+
+.last_logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.menu2 {
+    max-width: 500px;
+    height: 280px;
+    border: 1px solid transparent;
+    background-color: white;
+    /* margin: 10px auto; */
+}
+
+.menu2_top {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu2_top span {
+    margin-left: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    width: 90%;
+    height: auto;
+    margin: 10px 20px 5px 20px;
+}
+.buttons button {
+    min-width: 10px;
+    height: 20%;
+    border: 1px solid transparent;
+    font-size: 15px;
+    text-align: center;
+    background-color: aliceblue;
+    color:silver;
+    padding: 10px;
+}
+
+.buttons button:active {
+    background-color:royalblue;
+    color: white;
+}
+
+.week {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+}
+
+
+.week {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 5px;
+    padding-top: 20px;
+}
+
+.week > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.week > div > span {
+    margin-bottom: 10px;
+}
+
+.day {
+    color: grey;
+}
+
+#today {
+    color: white;
+    background-color: grey;
+    border: 1px solid transparent;
+    padding:2px 4px;
+    font-size: 12px;
+    border-radius: 30%;
+}
+
+
+
+.corona {
+    border: 1px solid transparent;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.corona img {
+    vertical-align: middle;
+}
+.corona a {
+    text-decoration: none;
+    color: grey;
+}
+
+
+.corona_separator {
+    margin: 0 10px;
+    font-size: 30px;
+    font-weight: 100;
+    color: silver;
+}
+
+.corona_status {
+    flex: 1;
+}
+
+.corona_fact {
+    flex: 1;
+}
+
+
+.anniversary {
+    max-width: 500px;
+    height: auto;
+    border: 1px solid transparent;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.anniversary span:first-child {
+    margin-right: 10px;
+}
+
+.app {
+    max-width: 500px;
+    padding: 10px;
+    height: auto;
+    border: 1px solid transparent;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.app span:first-child {
+    margin-right: 10px;
+    font-size: 13px;
+    color:grey;
+}
+
+.app span:first-child b {
+    color: black;
+}
+
+.app span:last-child {
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.app img {
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.app button {
+    color:dodgerblue;
+    border: 1px solid dodgerblue;
+    background-color: white;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.webtoon {
+    padding: 10px;
+    height: auto;
+    border: 1px solid transparent;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.pan {
+padding: 10px;
+height: auto;
+border: 1px solid transparent;
+background-color: white;
+margin: auto;
+}
+
+.pan > div:first-child {
+    margin: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pan ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 0 5px;
+}
+
+.pan li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border: 1px solid transparent;
+    background-color: aliceblue;
+    font-size: 15px;
+    justify-content: space-between;
+    padding: 3px;
+    color: grey;
+}
+
+.pan img {
+    vertical-align:middle;
+    margin-right: 5px;
+}
+
+.pan button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    font-weight: 200;
+    color: silver;
+}
+
+.update {
+    height: auto;
+    border: 1px solid transparent;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.notify {
+    border: 1px solid #03CF5D;
+    color: #03CF5D;
+    padding: 2px;
+    border-radius: 30%;
+    margin-right: 10px;
+}
+
+.update button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    font-weight: 200;
+    color: silver;
+}
+
+.weather
+.menu1,
+.menu2,
+.corona,
+.anniversary,
+.app,
+.webtoon,
+.pan,
+.update {
+    max-width: 500px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}

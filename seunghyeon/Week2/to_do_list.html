@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="title">
+                <h1>To Do List</h1>
+            </div>
+            <div>
+                <input id="bar" type="text" placeholder="할 일을 입력하세요." >
+                <input id="button" type="button" onclick="add()" value="Enter">
+            </div>
+        </header>
+        <main>
+            <ul id="list">
+            </ul>
+        </main>
+        <footer>
+            <input type="button" value="전체 선택" onclick="checkAll()">
+            <input type="button" value="전체 해제" onclick="unCheckAll()">
+            <input type="button" value="선택 삭제" onclick="Delete()">
+        </footer>
+    </body>
+</html>
