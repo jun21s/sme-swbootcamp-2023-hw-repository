@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAVER</title>
+    <link rel="stylesheet" href="naver_style.css" />
+  </head>
+
+  <body>
+    <h1 id="logo">NAVER</h1>
+
+    <div class="search">
+      <input type="text" placeholder="검색어를 입력해주세요." />
+      <img id="mic" src="img/mic.png" alt="" />
+    </div>
+
+    <div class="menu">
+      <div class="row1">
+        <div class="square">
+          <img src="img/news.png" alt="" />
+          <p>뉴스판</p>
+        </div>
+        <div class="square">
+          <img src="img/shoping.png" alt="" />
+          <p>쇼핑판</p>
+        </div>
+        <div class="square">
+          <img src="img/economy.png" alt="" />
+          <p>경제판</p>
+        </div>
+        <div class="square">
+          <img src="img/sports.png" alt="" />
+          <p>스포츠판</p>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="square">
+          <img src="img/mail.png" alt="" />
+          <p>메일</p>
+        </div>
+        <div class="square">
+          <img src="img/cafe.png" alt="" />
+          <p>카페</p>
+        </div>
+        <div class="square">
+          <img src="img/blog.png" alt="" />
+          <p>블로그</p>
+        </div>
+        <div class="square">
+          <img src="img/etc.png" alt="" />
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="today">
+      <div class="today_img">
+        <img src="img/cloud.svg" alt="" />
+      </div>
+      <div class="today_text">
+        <h3>10° 맑음</h3>
+        <p>어제보다 2° 높아요</p>
+      </div>
+    </div>
+
+    <div class="weather">
+      <div class="weather_text">
+        <h3>날씨</h3>
+        <p>서울시 잠실동</p>
+        <img src="img/loc.png" alt="" />
+      </div>
+
+      <div class="weather_menu">
+        <button class="hour_weather" type="button">시간대별 날씨</button>
+        <button class="hour_smog" type="button">시간대별 미세먼지</button>
+        <button class="week_weather" type="button">주간 날씨</button>
+        <button class="week_smog" type="button">주간 미세먼지</button>
+      </div>
+      <div>
+        <img src="img/weather.png" alt="" />
+      </div>
+    </div>
+
+    <div class="covid">
+      <div class="covid_box1">
+        <img src="img/covid.png" alt="" />
+        <h3>코로나19</h3>
+        <p>국내외 확진 현황</p>
+      </div>
+
+      <div class="covid_box2">
+        <img src="img/covid.png" alt="" />
+        <h3>코로나19 팩트체크</h3>
+        <p>백신 정보 팩트는?</p>
+      </div>
+    </div>
+
+    <div class="holiyday">
+      <img src="img/holiyday.jpg" alt="" />
+      <p>제102주년 <b>대한민국 임시정부 수립일</b></p>
+    </div>
+
+    <div class="app">
+      <img src="img/app.png" alt="" />
+      <p>앱으로 <b>새로운 네이버</b>를 더 쾌적하게 사용해 보세요.</p>
+      <button
+        class="use_app"
+        type="button"
+        onclick="location.href='https://m.naver.com/#';"
+      >
+        앱 사용하기
+      </button>
+    </div>
+
+    <div class="webtoon">
+      <h3>웹툰</h3>
+    </div>
+
+    <div class="hotissue">
+      <div><h3>인기 주제 판을 확인해 보세요!</h3></div>
+      <div class="hotissue_menu">
+        <div class="movie_pan">
+          <img src="img/movie.webp" alt="" />
+          <p>영화판</p>
+        </div>
+        <div class="bboom_pan">
+          <img src="img/bboom.webp" alt="" />
+          <p>뿜판</p>
+        </div>
+        <div class="webtoon_pan">
+          <img src="img/webtoon.png" alt="" />
+          <p>웹툰판</p>
+        </div>
+        <div class="economy_pan">
+          <img src="img/bank.webp" alt="d" />
+          <p>경제M판</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="notice">
+      <p>네이버앱 업데이트 사전 안내</p>
+    </div>
+
+    <script>
+      let row1Squares = document.querySelectorAll(".row1 .square");
+      for (let node of row1Squares) {
+        /* TODO: node 변수를 어떻게 조작해야 할까요? */
+      }
+
+      let row2Squares = document.querySelectorAll(".row2 .square");
+      for (let node of row2Squares) {
+        /* TODO: node 변수를 어떻게 조작해야 할까요? */
+      }
+    </script>
+  </body>
+
+  <footer>
+    <a href="https://m.naver.com/#">로그인 |</a>
+    <a href="https://m.naver.com/services.html">전체서비스 |</a>
+    <a href="http://www.naver.com/?mobile">PC버전</a>
+    <br />
+    <a
+      href="http://nid.naver.com/mobile/user/help/termAgree.nhn?m=viewTermAgree1"
+      >이용약관 |</a
+    >
+    <a
+      href="http://nid.naver.com/mobile/user/help/termAgree.nhn?m=viewTermAgree3"
+      ><b>개인정보처리방침</b> |</a
+    >
+    <a href="https://m.help.naver.com/support/index.nhn">고객센터</a>
+    <br /><br />
+    <h>NAVER</h>
+  </footer>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgb(249, 249, 249), rgb(228, 254, 255));
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+            margin-bottom: 15px;
+        }
+        #search {
+            position: relative;
+            text-align: center;
+            width: 450px;
+            margin: 0 auto;
+        }
+        .searchbox {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px 12px;
+            border: 1px solid rgb(5, 232, 88);
+        }
+        .micro {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+        }
+        .box {
+            display: inline;
+            width: auto;
+            border-radius: 0;
+            margin: auto;
+            text-align: center;
+            color: #989292;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .button-label {
+            margin-top: 5px;
+            color: grey;
+        }
+        .custom-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            margin-right: 25px;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+    }
+
+        .menu-content {
+            width: 30px;
+            height: 30px;
+            background-image: url('https://s.pstatic.net/static/www/m-new/uit/img/sp_main_search_5d2c8068.png');
+            background-position: -170px -85px;
+            background-size: 152px 152px;
+            position: fixed;
+        }
+        .QR-content {
+            width: 30px;
+            height: 30px;
+            background-image: url('https://s.pstatic.net/static/www/m-new/uit/img/sp_main_search_5d2c8068.png');
+            background-position: -115px -80px;
+            background-size: 152px 152px;
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+
+        .text-box {
+            display: flex;
+            align-items: center;
+            width: 500px;
+            height: 50px;
+            border: 0;
+            margin: 180px auto 5px;
+            background-color: white;
+        }
+        .text-box-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+        }
+        .text-box-content #intro {
+            margin-bottom: 3px;
+            margin-right: 10px;
+            font-size: 13px;
+        }
+        .text-box-content #app {
+            margin-bottom: 3px;
+            margin-left: 10px;
+            display: inline-block;
+        }
+        .text-box-content .intro-bold {
+            font-weight: bold;
+        }
+        .text-box-content #image {
+            margin-right: 10px;
+            margin-bottom: 3px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .toonbox {
+            display: flex;
+            align-items: center;
+            width: 500px;
+            height: 50px;
+            border: 0;
+            margin: 8px auto 8px;
+            background-color: white;
+        }
+        .toon {
+            font-weight: bold;
+            margin-left: 25px;
+            font-size: 13px;
+        }
+        .toonclick{
+            margin-left: 400px;
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        .sportsbox {
+            width: 500px;
+            height: 120px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+        }
+        .motherbox {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+        }
+        .babybox {
+            width: 220px;
+            height: 30px;
+            background-color: rgba(237, 237, 237, 0.801);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            position: relative;
+        }
+        #sports{
+            margin-top:3px;
+        }
+        #spbold{
+            font-weight: bold;
+        }
+        .pan {
+            margin-right: 5px;
+            position: absolute;
+            left: 5px;
+        }
+        .panclick {
+            font-weight: bold;
+            position: absolute;
+            right: 5px;
+        }
+        #box1, #box2 {
+            grid-row: 2;
+        }
+        #box3, #box4 {
+            grid-row: 3;
+        }
+
+        .center-bottom-text {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 5px;
+            color:rgb(92, 4, 102);
+            text-decoration: underline;
+        }
+
+        .lastlogo {
+            text-align: center !important;
+            font-weight: bold;
+            font-size: 15px;
+            color: grey;
+            margin-top: 8px;
+            margin-bottom: 50px;
+            text-decoration: none !important;
+            display: inline-block;
+        }
+</style>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>NAVER</title>
+</head>
+<body>
+    <div id="wrap">
+        <div class="high-button">
+        </div>
+        <button class="custom-button" onclick="location.href='https://www.naver.com/more.html'">
+            <div class="menu-content">
+            </div>
+        </button>
+        <button class="custom-button" onclick="location.href='https://nid.naver.com/login/privacyQR'">
+            <div class="QR-content">
+            </div>
+        </button>
+            <div id="wrap center">
+                <div id="header">
+                    <div class="logo-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Naver_Logotype.svg/782px-Naver_Logotype.svg.png" class="naver" style="width: 200px; height: 40px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="search">
+            <input type="text" placeholder="검색어를 입력해주세요" class="searchbox">
+            <img src="C:\Users\아이스베어\workspace\TIL\micro.png" alt="이미지" class="micro">
+        </div>
+        <div id="nav">
+            <div class="button-container">
+                <!-- 1행 버튼 -->
+                <div class="button-row">
+                <button class="custom-button" onclick="location.href='https://news.naver.com/'" style="width: 50px; height: 50px;">
+                    <div class="button-content">
+                    <img src="https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512720230Vr2gk.png" alt="버튼1 이미지" style="width: 50px; height: 50px;">
+                    <span class="button-label">뉴스판</span>
+                    </div>
+                </button>
+                <button class="custom-button" onclick="location.href='https://shopping.naver.com/home'" style="width: 50px; height: 50px;">
+                    <div class="button-content">
+                    <img src="https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512791912c66Bt.png" alt="버튼2 이미지" style="width: 50px; height: 50px;">
+                    <span class="button-label">쇼핑판</span>
+                    </div>
+                </button>
+                <button class="custom-button" onclick="location.href='https://finance.naver.com/'" style="width: 50px; height: 50px;">
+                    <div class="button-content">
+                    <img src="https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512696361X4su0.png" alt="버튼3 이미지" style="width: 50px; height: 50px;">
+                    <span class="button-label">경제판</span>
+                    </div>
+                </button>
+                <button class="custom-button" onclick="location.href='https://sports.news.naver.com/index'" style="width: 50px; height: 50px;">
+                    <div class="button-content">
+                    <img src="https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_16835128325991gQ16.png" alt="버튼4 이미지" style="width: 50px; height: 50px;">
+                    <span class="button-label">스포츠판</span>
+                    </div>
+                </button>
+                </div>
+                
+                <!-- 2행 버튼 -->
+                <div class="button-row">
+                <button class="custom-button" onclick="location.href='https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fmail.naver.com%2F'" style="width: 50px; height: 50px;">
+                    <div class="button-content">
+                    <img src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614331473O5jI4.png" alt="버튼5 이미지" style="width: 50px; height: 50px;">
+                    <span class="button-label">메일</span>
+                    </div>
+                </button>
+                <button class="custom-button" onclick="location.href='https://section.cafe.naver.com/ca-fe/'" style="width: 50px; height: 50px;">
+                    <div class="button-content">
+                    <img src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615368135Oq7ZA.png" alt="버튼6 이미지" style="width: 50px; height: 50px;">
+                    <span class="button-label">카페</span>
+                    </div>
+                </button>
+                <button class="custom-button" onclick="location.href='https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0'" style="width: 50px; height: 50px;">
+                    <div class="button-content">
+                    <img src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_16836153967537rYTc.png" alt="버튼7 이미지" style="width: 50px; height: 50px;">
+                    <span class="button-label">블로그</span>
+                    </div>
+                </button>
+                <button class="custom-button" onclick="location.href='https://www.naver.com/more.html'" style="width: 50px; height: 50px;">
+                    <div class="button-content">
+                    <img src="https://s.pstatic.net/static/www/mobile/edit/2021/0427/upload_1619497854375Q53rw.png" alt="버튼8 이미지" style="width: 50px; height: 50px;">
+                    </div>
+                </button>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="text-box">
+                <div class="text-box-content">
+                    <img id="image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20140401_117%2Fe_print_1396309224875nAv3h_JPEG%2Fnaver.jpg&type=sc960_832" alt="네이버 이미지">
+                    <div id="intro">
+                        <div class="intro">앱으로 <span class="intro-bold">새로운 네이버</span>를 더 쾌적하게 사용해 보세요.</div>
+                    </div>
+                    <span id="app" onclick="alert('사용하고 계신 환경(OS)에서는 지원되지 않는 기능입니다.')" style="color:#08ce08">앱 사용하기></span>
+                </div>
+            </div>
+            <div class="toonbox">
+                <span class="toon" style="color:black">웹툰</span>
+                <span class="toonclick" onclick="location.href='https://comic.naver.com/index'" style="color: black">&#9660;</span> <!-- 아래 화살표 특수문자 -->
+            </div>
+            <div class="sportsbox">
+                <div class="motherbox"><span id="sports"><span id="spbold">스포츠 소식</span>을 알려드릴게요!</span>
+                    <div class="babybox" id="box1" onclick="location.href='https://sports.news.naver.com/kbaseball/index'"><span class="pan">야구</span><span class="panclick">></span></div>
+                    <div class="babybox" id="box2" onclick="location.href='https://sports.news.naver.com/wbaseball/index'"><span class="pan">해외야구</span><span class="panclick">></span></div>
+                    <div class="babybox" id="box3" onclick="location.href='https://sports.news.naver.com/wfootball/index'"><span class="pan">해외축구</span><span class="panclick">></span></div>
+                    <div class="babybox" id="box4" onclick="location.href='https://sports.news.naver.com/basketball/index'"><span class="pan">농구</span><span class="panclick">></span></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="center-bottom-text">
+                <span id="login-link" onclick="location.href='https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/'" style="font-size: 9px;">로그인</span>
+                <span id="login-link" onclick="location.href='https://www.naver.com/more.html'" style="font-size: 9px;">전체서비스</span>
+                <span id="login-link" onclick="location.href='https://www.naver.com/'" style="font-size: 9px;">PC버전</span>
+            <div class="center-bottom-text-row">
+                <span id="login-link" onclick="location.href='https://policy.naver.com/rules/service.html'" style="font-size: 9px;">이용약관</span>
+                <span id="login-link" onclick="location.href='https://help.naver.com/service/30007/bookmark/17173?lang=ko'" style="font-size: 9px;">개인정보처리방침</span>
+                <span id="login-link" onclick="location.href='https://help.naver.com/index.help?lang=ko'" style="font-size: 9px;">고객센터</span>
+            </div>
+            <div class="lastlogo"><span>NAVER</span></div>
+        </div>
+    </body>
+</html>
