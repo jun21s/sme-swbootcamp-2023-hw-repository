@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const corBtn = document.createElement('button');
         corBtn.textContent = '수정';
         corBtn.className='corBtn';
+
         const delBtn = document.createElement('button');
         delBtn.textContent = '삭제';
         delBtn.className='delBtn';
@@ -33,7 +34,20 @@ document.addEventListener('DOMContentLoaded', () => {
         delBtn.addEventListener('click',(event) => {
             event.currentTarget.parentNode.parentNode.removeChild(event.currentTarget.parentNode);
         })
-        // 수정기능 넣기
+
+        corBtn.onclick = function () {
+            // 편집 가능한 상태
+            if (text.getAttribute('contenteditable') === 'true') {
+                text.setAttribute('contenteditable', 'false');
+                text.removeAttribute('readonly');
+                corBtn.textContent = '수정';
+            } else {
+                text.setAttribute('contenteditable', 'true');
+                text.focus(); // text 요소에 포커스 설정
+                text.setAttribute('readonly', 'true'); // 읽기 전용 상태로 변경
+                corBtn.textContent = '저장';
+            }
+        }
 
         checkbox.addEventListener('change',(event) => {
             if (checkbox.checked) {
@@ -46,28 +60,41 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
 
-        selectAll.addEventListener('click',(event) => {
-            checkbox.checked = selectAll.click;
-            text.style.textDecorationLine = "line-through";
-            text.style.textDecorationColor = "rgb(173, 173, 173)";
-            item.style.backgroundColor = "rgb(219, 226, 240)";
+        // selectAll.addEventListener('click',(event) => {
+        //     checkbox.checked = selectAll.click;
+        //     text.style.textDecorationLine = "line-through";
+        //     text.style.textDecorationColor = "rgb(173, 173, 173)";
+        //     item.style.backgroundColor = "rgb(219, 226, 240)";
+        // })
+
+        selectAll.addEventListener('click', (event) => {
+            const checkboxes = document.querySelectorAll('.checkbox');
+            checkboxes.forEach((cb) => {
+                cb.checked = true;
+                cb.dispatchEvent(new Event('change'));
+            })
         })
 
-        deselectAll.addEventListener('click',(event) => {
-            checkbox.checked = false;
-            text.style.textDecorationLine = "none";
-            item.style.backgroundColor = "white";
+        // deselectAll.addEventListener('click',(event) => {
+        //     checkbox.checked = false;
+        //     text.style.textDecorationLine = "none";
+        //     item.style.backgroundColor = "white";
+        // })
+
+        deselectAll.addEventListener('click', (event) => {
+            const checkboxes = document.querySelectorAll('.checkbox');
+            checkboxes.forEach((cb) => {
+                cb.checked = false;
+                cb.dispatchEvent(new Event('change'));
+            })
         })
 
-        // 선택삭제 안됨
-        // function deleteSelect() {
-        //     const lists = document.getElementsByClassName('checkbox');
-        //     for (let i=0; i<lists.length; i++) {
-        //         if (lists[i].checked) {
-        //             lists[i].parentElement.parentElement.remove();
-        //         }
-        //     }
-        // }
+        deleteSelect.addEventListener('click', (event) => {
+            const checkboxes = document.querySelectorAll('.checkbox:checked');
+            checkboxes.forEach((cb) => {
+                cb.parentNode.parentNode.removeChild(cb.parentNode);
+            })
+        })
 
         deleteAll.addEventListener('click',(event) => {
             todoList.innerHTML = '';
