@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(white, rgb(233, 233, 233));
+}
+#logo {
+  color: limegreen;
+  font-size: 50px;
+  font-weight: 1000;
+  text-align: center;
+  padding-top: 50px;
+}
+h3 {
+  font-size: 15px;
+}
+p {
+  font-size: 12px;
+}
+input {
+  padding-inline: 10px;
+  width: 400px;
+  height: 40px;
+  border: 1px solid limegreen;
+  color: rgba(211, 211, 211, 0.5);
+  font-weight: bold;
+}
+img {
+  padding: 5px;
+}
+
+/*검색창*/
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#mic {
+  position: absolute;
+  top: 50%;
+  transform: translate(400%, -50%);
+  width: 35px;
+  height: 35px;
+}
+
+/*메뉴*/
+
+.menu {
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 125px;
+}
+.square {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: 15px;
+  position: relative;
+  object-fit: cover;
+}
+.square img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.square p {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 5px;
+  text-align: center;
+}
+
+/*오늘의 날씨*/
+.today {
+  height: 60px;
+  width: 400px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.today img {
+  width: 50px;
+  height: 50px;
+}
+
+/*날씨*/
+
+.weather {
+  height: 225px;
+  width: 400px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.weather_text {
+  display: inline-flex;
+  align-items: center;
+}
+.weather .weather_text img {
+  height: 25px;
+  width: 25px;
+}
+button {
+  border: none;
+  padding: 5px;
+  font-size: 10px;
+}
+.weather img {
+  width: 90%;
+  object-fit: cover;
+}
+
+/*코로나*/
+
+.covid {
+  height: 60px;
+  width: 400px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  padding: 10px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+}
+.covid_box1 {
+  flex: 1;
+}
+.covid_box2 {
+  flex: 1;
+}
+.covid img {
+  float: left;
+  width: 20px;
+}
+
+/**/
+
+.holiyday {
+  height: 40px;
+  width: 400px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  text-align: center;
+
+  padding: 10px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.holiyday img {
+  width: 40px;
+  float: left;
+}
+
+/*앱 사용*/
+
+.app {
+  height: 50px;
+  width: 400px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  padding: 10px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+}
+.app img {
+  width: 40px;
+  float: left;
+}
+.app p {
+  font-size: 8px;
+}
+.app button {
+  background-color: white;
+  border: 1px solid blue;
+  border-radius: 5%;
+  color: rgb(0, 21, 255);
+  margin-left: 30px;
+}
+
+/*웹툰*/
+
+.webtoon {
+  height: 40px;
+  width: 400px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.hotissue {
+  height: 120px;
+  width: 400px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+}
+.hotissue_menu {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.hotissue_menu > div {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgb(241, 246, 251);
+  height: 35px;
+  width: 185px;
+  margin: 2px;
+  border-radius: 5px;
+}
+.hotissue_menu img {
+  width: 25px;
+  height: 25px;
+}
+
+/*업데이트 사전안내*/
+
+.notice {
+  height: 40px;
+  width: 400px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  padding: 10px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+}
+
+/*footer*/
+footer {
+  color: gray;
+  text-align: center;
+  font-weight: 1000;
+  padding: 50px;
+}
+a {
+  font-size: 10px;
+  color: gray;
+  text-decoration: none;
+}
