@@ -1,6 +1,6 @@
 # ToDoList 이미지, 구현 영상
 
-<img src="mingeun/Week2-quest/ToDoList-result.PNG" alt="todolist" width="600px">
+<br>
 
 ## 기능 설명
 
