@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'NanumSquareNeo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+} @font-face {
+  font-family: 'ONE-Mobile-Title';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'NanumSquareNeo', Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(255, 252, 252), rgb(255, 207, 207));
+}
+
+.Title {
+  font-family: 'ONE-Mobile-Title', Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-top: 6%;
+  font-size: 300%;
+}
+
+.inputList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+#inputList_text {
+  width: 670px; height: 50px;
+  font-size: 17px;
+  border: none;
+  border-bottom: 4px solid rgb(255, 169, 169);
+  padding-left: 15px;
+}
+
+#addButton {
+  background-color: rgb(254, 155, 155);
+  color: white; 
+  width: 70px; height: 50px;
+  border: none;
+  border-bottom: 3px solid rgb(211, 99, 99);
+}
+
+.ToDoList {
+  width: 740px;
+  margin: 1.5% auto;
+}
+
+#list {
+  margin: 15px;
+  font-size: 17px;
+}
+
+.ToDoList li .checkbox {
+  width: 15px; height: 15px;
+  border: 1px solid black;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.bottom_buttons {
+  display: flex;  
+  align-items: right;
+  justify-content: right;
+  padding-top: 5px;
+}
+
+#buttons {
+  height: 25px; width: 65px;
+  margin-left: 7px;
+  background-color: rgb(254, 155, 155);
+  color: white; 
+  border: 0px;
+  border-radius: 5px;
+}
+
+.listitem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+} 
+
+.editbutton {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.listitem input[type="checkbox"] {
+  margin-right: 5px;
+  width: 25px;
+}
+
+.editbutton, .deletebutton {
+  width: 35px; height: 20px;
+}
