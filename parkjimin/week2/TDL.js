@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const deleteSelect = document.querySelector('#delete-select');
     const deleteAll = document.querySelector('#delete-all');
 
-    enter.addEventListener('click', (event) => {
+    enter.addEventListener('click', () => {
         if (todoInputBox.value === "") {
             return;
         }
@@ -39,17 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
             // 편집 가능한 상태
             if (text.getAttribute('contenteditable') === 'true') {
                 text.setAttribute('contenteditable', 'false');
-                text.removeAttribute('readonly');
+                // 편집 불가능 상태로 변경
                 corBtn.textContent = '수정';
             } else {
                 text.setAttribute('contenteditable', 'true');
                 text.focus(); // text 요소에 포커스 설정
-                text.setAttribute('readonly', 'true'); // 읽기 전용 상태로 변경
                 corBtn.textContent = '저장';
             }
         }
 
-        checkbox.addEventListener('change',(event) => {
+        checkbox.addEventListener('change',() => {
             if (checkbox.checked) {
                 text.style.textDecorationLine = "line-through";
                 text.style.textDecorationColor = "rgb(173, 173, 173)";
@@ -67,11 +66,14 @@ document.addEventListener('DOMContentLoaded', () => {
         //     item.style.backgroundColor = "rgb(219, 226, 240)";
         // })
 
-        selectAll.addEventListener('click', (event) => {
+        selectAll.addEventListener('click', () => {
             const checkboxes = document.querySelectorAll('.checkbox');
+            // 반복 수행
             checkboxes.forEach((cb) => {
+                // 체크박스 요소를 나타내는 매개변수 cb 정의
                 cb.checked = true;
                 cb.dispatchEvent(new Event('change'));
+                // 요소에 change 이벤트 발생
             })
         })
 
@@ -81,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //     item.style.backgroundColor = "white";
         // })
 
-        deselectAll.addEventListener('click', (event) => {
+        deselectAll.addEventListener('click', () => {
             const checkboxes = document.querySelectorAll('.checkbox');
             checkboxes.forEach((cb) => {
                 cb.checked = false;
@@ -89,18 +91,19 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         })
 
-        deleteSelect.addEventListener('click', (event) => {
+        deleteSelect.addEventListener('click', () => {
             const checkboxes = document.querySelectorAll('.checkbox:checked');
             checkboxes.forEach((cb) => {
                 cb.parentNode.parentNode.removeChild(cb.parentNode);
             })
         })
 
-        deleteAll.addEventListener('click',(event) => {
+        deleteAll.addEventListener('click',() => {
             todoList.innerHTML = '';
             selectAll.checked = false;
         })
 
+        // 부모 노드(item)에 자식 노드() 추가
         item.appendChild(checkbox);
         item.appendChild(text);
         item.appendChild(corBtn);
