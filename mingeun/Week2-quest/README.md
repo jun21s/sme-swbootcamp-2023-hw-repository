@@ -1,6 +1,6 @@
 # ToDoList 이미지, 구현 영상
 
-<br>
+<img src="ToDoList-result.png" alt="todolist" width="600px">
 
 ## 기능 설명
 
