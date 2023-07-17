@@ -1,4 +1,4 @@
-# ToDoList 이미지, 구현 영상
+# ToDoList
 
 <br>
 
