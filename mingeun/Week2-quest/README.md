@@ -1,6 +1,6 @@
 # ToDoList
 
-<br>
+![To_Do_List_-_Chrome_2023-07-18_13-20-01_AdobeExpress_AdobeExpress](https://github.com/TEAMLAB-Lecture/sme-swbootcamp-2023-hw-repository/assets/134721315/9677868b-4bd4-4164-a575-79a20fd7a96c)
 
 ## 기능 설명
 
