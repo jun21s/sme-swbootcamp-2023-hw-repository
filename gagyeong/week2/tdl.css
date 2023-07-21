@@ -29,10 +29,8 @@ body {
 }
 
 .container {
-    
     justify-content: center;
     align-items: center;
-  
 }
 
 .input-container{
@@ -47,14 +45,13 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     border: 0;
-    border-radius: 20px;
-    
+    border-radius: 20px; 
 }
 
 #taskInput:focus {
     outline: none;
     border: 1px dashed #674a4acb;
-  }
+}
 
 input::placeholder {
     color: #543b3b92;
@@ -90,16 +87,13 @@ input::placeholder {
     align-items: left;
     margin-top: 5px;
     border-radius: 10px;
-    
 }
 
 #taskList li {
-    
     display: flex;
     align-items: center;
     padding: 5px;
     margin-bottom: 5px;
-    
 }
 
 #taskList li input[type="checkbox"] {
@@ -115,8 +109,7 @@ input::placeholder {
     vertical-align: baseline;
     border-radius: 20px;
     border: none;
-    padding: 5px;
-      
+    padding: 5px;    
   }
 
   #taskList li button:hover,
