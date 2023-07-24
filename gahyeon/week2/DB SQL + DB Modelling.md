@@ -1,3 +1,0 @@
-#### DB SQL + DB Modelling
-
----
